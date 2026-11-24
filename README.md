@@ -274,11 +274,10 @@ It writes `MANIFEST.json` (SHA-256 of every file) and a `.tar.gz`. Datasets are 
 | `scripts/make_feature_table.py` | feature lists | Tables S1–S2 |
 | `scripts/make_figures.py` | Figures 2–8 and S1 | all data figures |
 | `scripts/robustness_ci.py` | bootstrap intervals over cells, blocks and whole datasets; seed standard deviation (`runs/robustness_ci.txt`) | Section 6.1, Table 7, Section 9.4 |
-| `scripts/verify_tables.py` | recomputes every table from `results.jsonl` and compares it with the LaTeX source | all tables |
+| `scripts/verify_tables.py` | recomputes the result tables from `results.jsonl` and compares them cell by cell with the LaTeX source (`runs/verify_report.md`) | Tables 5, 6, 8–10, 12, 13 and S5–S11 |
 
 ```bash
-python scripts/verify_tables.py --runs runs --tex manuscript.tex supplementary.tex \
-       --out runs/verify_report.md --tables runs/recomputed_tables.md
+python scripts/verify_tables.py --runs runs --tex manuscript.tex supplementary.tex --out runs/verify_report.md
 python scripts/make_figures.py  --runs runs --mechanism runs/mechanism --out figures
 ```
 

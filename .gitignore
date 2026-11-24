@@ -29,6 +29,10 @@ artifact/
 *.pth
 *.ckpt
 
+# LaTeX tables written by the analysis scripts (re-created by analyze_controls.py,
+# mechanism_analysis.py and make_feature_table.py); scripts/Figure_1.tex stays versioned.
+runs/**/*.tex
+
 # Official TabSyn/TabDDPM code is cloned separately (see README, Section 5)
 external/
 
