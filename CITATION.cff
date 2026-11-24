@@ -1,0 +1,46 @@
+cff-version: 1.2.0
+title: "When does data augmentation help flow-based network intrusion detection? A leakage-aware study of semantic validity and class trade-offs"
+message: "If you use this software, please cite it as below."
+version: "1.2.0"
+type: "software"
+license: "MIT"
+authors:
+  - family-names: "Nguyen"
+    given-names: "Hoang-Thanh"
+    affiliation: "Posts and Telecommunications Institute of Technology, Ho Chi Minh City, Vietnam"
+    orcid: "https://orcid.org/0009-0005-2844-6113"
+  - family-names: "Huynh"
+    given-names: "De-Thu"
+    affiliation: "School of Computer Science & Engineering, The Saigon International University, Ho Chi Minh City, Vietnam"
+    orcid: "https://orcid.org/0000-0002-1227-0281"
+  - family-names: "Huynh"
+    given-names: "Trong-Thua"
+    affiliation: "Posts and Telecommunications Institute of Technology, Ho Chi Minh City, Vietnam"
+    orcid: "https://orcid.org/0000-0003-3934-1067"
+repository-code: "https://github.com/hthanhsg/A-leakage-aware-study-of-semantic-validity-and-class-trade-offs"
+keywords:
+  - "network intrusion detection"
+  - "data augmentation"
+  - "class imbalance"
+  - "data leakage"
+  - "evaluation methodology"
+  - "diffusion models"
+  - "NetFlow"
+abstract: >-
+  Data augmentation is routinely prescribed for the class imbalance of network intrusion detection datasets,
+  and studies report gains from oversampling and generative models. We examine whether these gains survive a
+  leakage-aware evaluation and what explains the outcome. Five flow-based datasets from two feature families
+  are evaluated under four splitting protocols with six classifier families, nine published augmentation
+  methods and a constraint-aware diffusion augmenter built as a probe. The evaluation protocol outweighs the
+  choice of method: 27–66% of the flows are exact duplicates once identifiers are removed, and a temporal or
+  host-disjoint split lowers macro-F1 by 7.1 and 10.3 points on average relative to a deduplicated random
+  split. With the complete training data, in which the largest classes are capped, no method improves macro-F1
+  significantly and nine of ten lower the Matthews correlation coefficient. When rare classes are reduced to
+  1–5% of their size, synthetic minority oversampling (SMOTE) gains four to five points, but class weights
+  achieve the same without generating any flow; without class capping, oversampling shows a non-significant
+  gain of about two points. Between 20% and 99% of the synthetic flows of published interpolation and
+  generative methods violate protocol-level constraints that real flows almost always satisfy. The probe
+  removes all violations and outperforms the other augmenters, yet is not significantly better than no
+  augmentation (+0.008 macro-F1, p = 0.20), and its validation-based decisions do not transfer to the test
+  partition. Under sound protocols scores follow class overlap and train–test shift, which resampling does not
+  change. Code, splits and results are released.
