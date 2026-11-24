@@ -281,7 +281,7 @@ python scripts/verify_tables.py --runs runs --tex manuscript.tex supplementary.t
 python scripts/make_figures.py  --runs runs --mechanism runs/mechanism --out figures
 ```
 
-`make_figures.py` needs only pandas, numpy, scipy and matplotlib; it trains no model and reads no dataset. Figure 1 is a TikZ drawing (`scripts/Figure_1.tex`; the same drawing is embedded in `manuscript.tex`). All figures remain readable when printed in grey scale: groups differ by marker shape or by hatching, not by colour alone.
+`make_figures.py` needs only pandas, numpy, scipy and matplotlib; it trains no model and reads no dataset.
 
 ## 10. Known issues
 
