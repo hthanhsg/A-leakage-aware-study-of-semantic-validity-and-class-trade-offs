@@ -1,0 +1,25 @@
+{
+  "train_conflicts_policy": "majority",
+  "train_conflict_removed": {
+    "Benign": 21932,
+    "Infilteration": 8318,
+    "Brute_Force_-Web": 348,
+    "SQL_Injection": 218,
+    "Brute_Force_-XSS": 24
+  },
+  "sizes_before_dedup": [
+    797178,
+    276006,
+    276006
+  ],
+  "dedup_removed": {
+    "train_internal": 351245,
+    "val_overlap_train": 142831,
+    "test_overlap_trainval": 166607
+  },
+  "sizes": [
+    445933,
+    133175,
+    109399
+  ]
+}

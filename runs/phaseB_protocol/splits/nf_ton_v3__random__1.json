@@ -1,0 +1,30 @@
+{
+  "train_conflicts_policy": "majority",
+  "train_conflict_removed": {
+    "Benign": 20632,
+    "scanning": 12828,
+    "injection": 6204,
+    "xss": 5946,
+    "dos": 3043,
+    "ddos": 2553,
+    "mitm": 227,
+    "password": 190,
+    "Backdoor": 19,
+    "ransomware": 1
+  },
+  "sizes_before_dedup": [
+    914347,
+    321997,
+    321997
+  ],
+  "dedup_removed": {
+    "train_internal": 576562,
+    "val_overlap_train": 202309,
+    "test_overlap_trainval": 220434
+  },
+  "sizes": [
+    337785,
+    119688,
+    101563
+  ]
+}

@@ -1,0 +1,19 @@
+\begin{table}[t]
+\centering\small
+\caption{Natural class imbalance: macro-F1 without the per-class cap and without the training-row cap (temporal protocol, XGBoost and MLP).}
+\label{tab:nocap}
+\begin{tabular}{lrr}
+\toprule
+dataset & cic2017\_nocap & nf\_unsw\_v3\_nocap \\
+method &  &  \\
+\midrule
+none & 0.833 & 0.512 \\
+none\_cw & 0.804 & 0.494 \\
+none\_cw\_sqrt & 0.827 & 0.514 \\
+ros & 0.854 & 0.526 \\
+smote & 0.850 & 0.531 \\
+diffusion & 0.843 & 0.497 \\
+validaug & 0.843 & 0.521 \\
+\bottomrule
+\end{tabular}
+\end{table}

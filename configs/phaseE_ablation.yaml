@@ -1,0 +1,91 @@
+# PHASE E -- VALID-Aug ablation (temporal_stratified protocol, 2 representative classifiers).
+name: phaseE_ablation
+out_dir: runs/phaseE_ablation
+seeds: [0, 1, 2, 3, 4]
+datasets: [nf_unsw_v3, nf_ton_v3, nf_bot_v3, nf_cic2018_v3, cic2017_fixed]
+splits: [temporal_stratified]
+scenarios:
+  - {name: full, type: full}
+  - {name: rare5, type: rare, frac: 0.05}
+methods: [diffusion, validaug, va_no_gc, va_no_gb, va_no_proj, va_no_filter, va_default_budget, va_no_delta, va_guidance_only]
+classifiers: [xgboost, mlp]
+
+# ---- shared hyper-parameters (copied from base_gpu.yaml) ----
+# Default hyper-parameters for the GPU server (V100 16GB / P40 24GB). Phase files inherit them
+# by copying this block (YAML has no include) -- keep them in sync when editing.
+data_dir: data/processed
+device: auto
+log_level: INFO
+split_seed_fixed: false
+train_conflicts: majority     # label conflicts on train: majority | drop | keep
+max_train_rows: 300000          # cap on training rows per cell (water-filling: rare classes kept); null = no cap
+encoder: {n_quantiles: 1000, max_categories: 32}
+constraints: {tau_hard: 0.005, tau_learn: 0.001, max_learned: 60}
+classifier_params:
+  xgboost: {n_estimators: 600}
+  rf: {n_estimators: 300}
+  mlp: {epochs: 40, patience: 6}
+  cnn1d: {epochs: 30, patience: 5}
+  lstm: {epochs: 20, patience: 4}
+  ft_transformer: {epochs: 15, patience: 4, batch_size: 1024}
+aug:
+  budget: {alpha: 0.5, beta: 10}
+  diffusion: {steps: 30000, hidden: 512, depth: 4, batch_size: 2048, lr: 0.001, sample_steps: 200,
+              cfg_w: 1.0, p_uncond: 0.1, class_balance_power: 0.5}
+  boundary: {n_members: 3, epochs: 20, hidden: 256, noise_std: 0.1}
+  validaug: {lambda_c: 1.0, lambda_b: 0.2, delta: 1.0, gamma: 1.0, t1: 0.2, t2: 0.7, inner_steps: 3,
+             max_grad_norm: 1.0, oversample: 2.0, pool_cap: 20000, budget_trials: 30, sample_batch: 8192,
+             budget_proxies: [xgboost, mlp], budget_min_gain: 0.002}
+  filter: {rho: 0.3, dcr_q: 5.0, margin_hi_q: 90.0, min_keep_frac: 0.1}
+  gan: {epochs: 300, batch_size: 500, max_rows: 50000}
+  external:                      # official TabSyn / TabDDPM (scripts/external/setup_external.sh)
+    python: null                 # e.g. ~/anaconda3/envs/tabsyn_ext/bin/python ; null -> methods skipped
+    tabsyn_root: null            # e.g. external/tabsyn
+    max_rows: 50000              # class-capped training subsample (same as CTGAN/TVAE)
+    tabsyn_vae_epochs: 4000      # official defaults (early stopping inside the official code)
+    tabsyn_epochs: 10000
+    tabddpm_steps: 30000         # = our diffusion's training steps (official configs use up to 100k)
+    tabddpm_ddim: false          # true -> DDIM sampling (faster, non-default)
+    tabddpm_y_cond: true         # official class-conditional TabDDPM (false = unconditional + rejection)
+    max_rounds: 20               # rejection-sampling rounds to meet class quotas
+eval: {fidelity: true, privacy: true}
+save_synthetic: 10000           # synthetic flows saved per cell & method (0 = off)
+cache_root: runs/cache          # diffusion models shared by phases C/D/E/F and sensitivity runs
+
+# ---- phase C results (scripts/collect_tuning.py) ----
+aug_per_dataset:
+  cic2017_fixed:
+    validaug:
+      lambda_c: 0.1719
+      lambda_b: 0.073
+      delta: 0.8079
+      t1: 0.0222
+      t2: 0.7291
+  nf_bot_v3:
+    validaug:
+      lambda_c: 0.4827
+      lambda_b: 0.2909
+      delta: 0.5614
+      t1: 0.2458
+      t2: 0.7254
+  nf_cic2018_v3:
+    validaug:
+      lambda_c: 0.2844
+      lambda_b: 0.9198
+      delta: 0.469
+      t1: 0.3572
+      t2: 0.6731
+  nf_ton_v3:
+    validaug:
+      lambda_c: 0.3526
+      lambda_b: 0.4404
+      delta: 1.7238
+      t1: 0.1275
+      t2: 0.6185
+  nf_unsw_v3:
+    validaug:
+      lambda_c: 0.1984
+      lambda_b: 0.1057
+      delta: 2.8698
+      t1: 0.3655
+      t2: 0.8404

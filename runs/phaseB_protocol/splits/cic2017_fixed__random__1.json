@@ -1,0 +1,22 @@
+{
+  "train_conflicts_policy": "majority",
+  "train_conflict_removed": {
+    "Benign": 1091,
+    "PortScan": 2
+  },
+  "sizes_before_dedup": [
+    379244,
+    126779,
+    126779
+  ],
+  "dedup_removed": {
+    "train_internal": 98950,
+    "val_overlap_train": 34071,
+    "test_overlap_trainval": 34790
+  },
+  "sizes": [
+    280294,
+    92708,
+    91989
+  ]
+}

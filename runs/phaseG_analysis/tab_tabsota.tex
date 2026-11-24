@@ -1,0 +1,20 @@
+\begin{table}[t]
+\centering\small
+\caption{Official TabDDPM and TabSyn (macro-F1, temporal protocol, full data, cells shared with the main comparison).}
+\label{tab:tabsota}
+\begin{tabular}{lrrrrrr}
+\toprule
+dataset & cic2017\_fixed & nf\_bot\_v3 & nf\_cic2018\_v3 & nf\_ton\_v3 & nf\_unsw\_v3 & mean \\
+method &  &  &  &  &  &  \\
+\midrule
+none & 0.894 & 0.704 & 0.784 & 0.847 & 0.506 & 0.747 \\
+smote & 0.902 & 0.655 & 0.775 & 0.851 & 0.518 & 0.740 \\
+ctgan & 0.888 & 0.696 & 0.781 & 0.844 & 0.506 & 0.743 \\
+tvae & 0.922 & 0.587 & 0.770 & 0.821 & 0.513 & 0.723 \\
+tabddpm & 0.903 & 0.643 & 0.797 & 0.842 & 0.503 & 0.737 \\
+tabsyn & 0.847 & 0.642 & 0.761 & 0.845 & 0.481 & 0.715 \\
+diffusion & 0.895 & 0.695 & 0.783 & 0.843 & 0.524 & 0.748 \\
+validaug & 0.892 & 0.703 & 0.779 & 0.852 & 0.540 & 0.753 \\
+\bottomrule
+\end{tabular}
+\end{table}

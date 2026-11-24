@@ -1,0 +1,1577 @@
+{
+  "n_rows": {
+    "main": 2919,
+    "cw": 330,
+    "d50": 60,
+    "nocap": 84,
+    "tabsota": 32
+  },
+  "cw": {
+    "means": [
+      {
+        "method": "none",
+        "scenario": "full",
+        "n_cells": 75,
+        "macro_f1": 0.7419,
+        "rare_f1": 0.6761,
+        "mcc": 0.7953
+      },
+      {
+        "method": "none_cw",
+        "scenario": "full",
+        "n_cells": 75,
+        "macro_f1": 0.7249,
+        "rare_f1": 0.6303,
+        "mcc": 0.7768
+      },
+      {
+        "method": "none_cw_sqrt",
+        "scenario": "full",
+        "n_cells": 75,
+        "macro_f1": 0.7367,
+        "rare_f1": 0.674,
+        "mcc": 0.7847
+      },
+      {
+        "method": "ros",
+        "scenario": "full",
+        "n_cells": 75,
+        "macro_f1": 0.7381,
+        "rare_f1": 0.6616,
+        "mcc": 0.7826
+      },
+      {
+        "method": "smote",
+        "scenario": "full",
+        "n_cells": 75,
+        "macro_f1": 0.739,
+        "rare_f1": 0.6807,
+        "mcc": 0.7801
+      },
+      {
+        "method": "smote_enn",
+        "scenario": "full",
+        "n_cells": 75,
+        "macro_f1": 0.7347,
+        "rare_f1": 0.6716,
+        "mcc": 0.7763
+      },
+      {
+        "method": "diffusion",
+        "scenario": "full",
+        "n_cells": 75,
+        "macro_f1": 0.742,
+        "rare_f1": 0.6848,
+        "mcc": 0.7867
+      },
+      {
+        "method": "validaug",
+        "scenario": "full",
+        "n_cells": 75,
+        "macro_f1": 0.7464,
+        "rare_f1": 0.6906,
+        "mcc": 0.7914
+      },
+      {
+        "method": "none",
+        "scenario": "rare5",
+        "n_cells": 45,
+        "macro_f1": 0.6513,
+        "rare_f1": 0.588,
+        "mcc": 0.7666
+      },
+      {
+        "method": "none_cw",
+        "scenario": "rare5",
+        "n_cells": 45,
+        "macro_f1": 0.7004,
+        "rare_f1": 0.6482,
+        "mcc": 0.7667
+      },
+      {
+        "method": "none_cw_sqrt",
+        "scenario": "rare5",
+        "n_cells": 45,
+        "macro_f1": 0.6813,
+        "rare_f1": 0.6214,
+        "mcc": 0.7701
+      },
+      {
+        "method": "ros",
+        "scenario": "rare5",
+        "n_cells": 45,
+        "macro_f1": 0.683,
+        "rare_f1": 0.6286,
+        "mcc": 0.7731
+      },
+      {
+        "method": "smote",
+        "scenario": "rare5",
+        "n_cells": 45,
+        "macro_f1": 0.6932,
+        "rare_f1": 0.6417,
+        "mcc": 0.7742
+      },
+      {
+        "method": "smote_enn",
+        "scenario": "rare5",
+        "n_cells": 45,
+        "macro_f1": 0.7015,
+        "rare_f1": 0.6512,
+        "mcc": 0.7816
+      },
+      {
+        "method": "diffusion",
+        "scenario": "rare5",
+        "n_cells": 45,
+        "macro_f1": 0.6811,
+        "rare_f1": 0.6272,
+        "mcc": 0.772
+      },
+      {
+        "method": "validaug",
+        "scenario": "rare5",
+        "n_cells": 45,
+        "macro_f1": 0.6723,
+        "rare_f1": 0.6169,
+        "mcc": 0.7676
+      },
+      {
+        "method": "none",
+        "scenario": "rare1",
+        "n_cells": 45,
+        "macro_f1": 0.5919,
+        "rare_f1": 0.5154,
+        "mcc": 0.7318
+      },
+      {
+        "method": "none_cw",
+        "scenario": "rare1",
+        "n_cells": 45,
+        "macro_f1": 0.65,
+        "rare_f1": 0.5889,
+        "mcc": 0.7433
+      },
+      {
+        "method": "none_cw_sqrt",
+        "scenario": "rare1",
+        "n_cells": 45,
+        "macro_f1": 0.617,
+        "rare_f1": 0.5477,
+        "mcc": 0.7388
+      },
+      {
+        "method": "ros",
+        "scenario": "rare1",
+        "n_cells": 45,
+        "macro_f1": 0.6221,
+        "rare_f1": 0.5568,
+        "mcc": 0.7407
+      },
+      {
+        "method": "smote",
+        "scenario": "rare1",
+        "n_cells": 45,
+        "macro_f1": 0.6395,
+        "rare_f1": 0.5765,
+        "mcc": 0.7475
+      },
+      {
+        "method": "smote_enn",
+        "scenario": "rare1",
+        "n_cells": 45,
+        "macro_f1": 0.629,
+        "rare_f1": 0.5625,
+        "mcc": 0.7441
+      },
+      {
+        "method": "diffusion",
+        "scenario": "rare1",
+        "n_cells": 45,
+        "macro_f1": 0.6196,
+        "rare_f1": 0.5516,
+        "mcc": 0.7371
+      },
+      {
+        "method": "validaug",
+        "scenario": "rare1",
+        "n_cells": 45,
+        "macro_f1": 0.6067,
+        "rare_f1": 0.5352,
+        "mcc": 0.7346
+      }
+    ],
+    "tests_macro_f1": [
+      {
+        "scenario": "full",
+        "ref": "none_cw",
+        "vs": "none",
+        "metric": "macro_f1",
+        "n_blocks": 25,
+        "mean_diff": -0.017,
+        "wins": 7,
+        "losses": 18,
+        "p": 0.0147,
+        "p_holm": 0.0678
+      },
+      {
+        "scenario": "full",
+        "ref": "none_cw",
+        "vs": "ros",
+        "metric": "macro_f1",
+        "n_blocks": 25,
+        "mean_diff": -0.0132,
+        "wins": 10,
+        "losses": 15,
+        "p": 0.173,
+        "p_holm": 0.3459
+      },
+      {
+        "scenario": "full",
+        "ref": "none_cw",
+        "vs": "smote",
+        "metric": "macro_f1",
+        "n_blocks": 25,
+        "mean_diff": -0.0141,
+        "wins": 10,
+        "losses": 15,
+        "p": 0.0551,
+        "p_holm": 0.1652
+      },
+      {
+        "scenario": "full",
+        "ref": "none_cw",
+        "vs": "smote_enn",
+        "metric": "macro_f1",
+        "n_blocks": 25,
+        "mean_diff": -0.0098,
+        "wins": 11,
+        "losses": 14,
+        "p": 0.381,
+        "p_holm": 0.381
+      },
+      {
+        "scenario": "full",
+        "ref": "none_cw",
+        "vs": "validaug",
+        "metric": "macro_f1",
+        "n_blocks": 25,
+        "mean_diff": -0.0215,
+        "wins": 8,
+        "losses": 17,
+        "p": 0.0136,
+        "p_holm": 0.0678
+      },
+      {
+        "scenario": "full",
+        "ref": "none_cw_sqrt",
+        "vs": "none",
+        "metric": "macro_f1",
+        "n_blocks": 25,
+        "mean_diff": -0.0052,
+        "wins": 11,
+        "losses": 14,
+        "p": 0.2752,
+        "p_holm": 1.0
+      },
+      {
+        "scenario": "full",
+        "ref": "none_cw_sqrt",
+        "vs": "ros",
+        "metric": "macro_f1",
+        "n_blocks": 25,
+        "mean_diff": -0.0014,
+        "wins": 16,
+        "losses": 9,
+        "p": 0.5424,
+        "p_holm": 1.0
+      },
+      {
+        "scenario": "full",
+        "ref": "none_cw_sqrt",
+        "vs": "smote",
+        "metric": "macro_f1",
+        "n_blocks": 25,
+        "mean_diff": -0.0023,
+        "wins": 15,
+        "losses": 10,
+        "p": 0.6338,
+        "p_holm": 1.0
+      },
+      {
+        "scenario": "full",
+        "ref": "none_cw_sqrt",
+        "vs": "smote_enn",
+        "metric": "macro_f1",
+        "n_blocks": 25,
+        "mean_diff": 0.002,
+        "wins": 15,
+        "losses": 10,
+        "p": 0.3525,
+        "p_holm": 1.0
+      },
+      {
+        "scenario": "full",
+        "ref": "none_cw_sqrt",
+        "vs": "validaug",
+        "metric": "macro_f1",
+        "n_blocks": 25,
+        "mean_diff": -0.0098,
+        "wins": 10,
+        "losses": 15,
+        "p": 0.1199,
+        "p_holm": 0.5997
+      },
+      {
+        "scenario": "rare5",
+        "ref": "none_cw",
+        "vs": "none",
+        "metric": "macro_f1",
+        "n_blocks": 15,
+        "mean_diff": 0.0491,
+        "wins": 13,
+        "losses": 2,
+        "p": 0.0181,
+        "p_holm": 0.0903
+      },
+      {
+        "scenario": "rare5",
+        "ref": "none_cw",
+        "vs": "ros",
+        "metric": "macro_f1",
+        "n_blocks": 15,
+        "mean_diff": 0.0174,
+        "wins": 11,
+        "losses": 4,
+        "p": 0.1205,
+        "p_holm": 0.3616
+      },
+      {
+        "scenario": "rare5",
+        "ref": "none_cw",
+        "vs": "smote",
+        "metric": "macro_f1",
+        "n_blocks": 15,
+        "mean_diff": 0.0072,
+        "wins": 9,
+        "losses": 6,
+        "p": 0.3303,
+        "p_holm": 0.6605
+      },
+      {
+        "scenario": "rare5",
+        "ref": "none_cw",
+        "vs": "smote_enn",
+        "metric": "macro_f1",
+        "n_blocks": 15,
+        "mean_diff": -0.0011,
+        "wins": 9,
+        "losses": 6,
+        "p": 0.5995,
+        "p_holm": 0.6605
+      },
+      {
+        "scenario": "rare5",
+        "ref": "none_cw",
+        "vs": "validaug",
+        "metric": "macro_f1",
+        "n_blocks": 15,
+        "mean_diff": 0.0281,
+        "wins": 10,
+        "losses": 5,
+        "p": 0.0637,
+        "p_holm": 0.2549
+      },
+      {
+        "scenario": "rare5",
+        "ref": "none_cw_sqrt",
+        "vs": "none",
+        "metric": "macro_f1",
+        "n_blocks": 15,
+        "mean_diff": 0.03,
+        "wins": 13,
+        "losses": 2,
+        "p": 0.0302,
+        "p_holm": 0.1508
+      },
+      {
+        "scenario": "rare5",
+        "ref": "none_cw_sqrt",
+        "vs": "ros",
+        "metric": "macro_f1",
+        "n_blocks": 15,
+        "mean_diff": -0.0017,
+        "wins": 9,
+        "losses": 6,
+        "p": 0.8469,
+        "p_holm": 0.8469
+      },
+      {
+        "scenario": "rare5",
+        "ref": "none_cw_sqrt",
+        "vs": "smote",
+        "metric": "macro_f1",
+        "n_blocks": 15,
+        "mean_diff": -0.012,
+        "wins": 4,
+        "losses": 11,
+        "p": 0.1205,
+        "p_holm": 0.3616
+      },
+      {
+        "scenario": "rare5",
+        "ref": "none_cw_sqrt",
+        "vs": "smote_enn",
+        "metric": "macro_f1",
+        "n_blocks": 15,
+        "mean_diff": -0.0203,
+        "wins": 4,
+        "losses": 11,
+        "p": 0.0637,
+        "p_holm": 0.2549
+      },
+      {
+        "scenario": "rare5",
+        "ref": "none_cw_sqrt",
+        "vs": "validaug",
+        "metric": "macro_f1",
+        "n_blocks": 15,
+        "mean_diff": 0.0089,
+        "wins": 10,
+        "losses": 5,
+        "p": 0.2524,
+        "p_holm": 0.5048
+      },
+      {
+        "scenario": "rare1",
+        "ref": "none_cw",
+        "vs": "none",
+        "metric": "macro_f1",
+        "n_blocks": 15,
+        "mean_diff": 0.0582,
+        "wins": 13,
+        "losses": 2,
+        "p": 0.0003,
+        "p_holm": 0.0015
+      },
+      {
+        "scenario": "rare1",
+        "ref": "none_cw",
+        "vs": "ros",
+        "metric": "macro_f1",
+        "n_blocks": 15,
+        "mean_diff": 0.028,
+        "wins": 12,
+        "losses": 3,
+        "p": 0.0302,
+        "p_holm": 0.0905
+      },
+      {
+        "scenario": "rare1",
+        "ref": "none_cw",
+        "vs": "smote",
+        "metric": "macro_f1",
+        "n_blocks": 15,
+        "mean_diff": 0.0106,
+        "wins": 10,
+        "losses": 5,
+        "p": 0.3303,
+        "p_holm": 0.4155
+      },
+      {
+        "scenario": "rare1",
+        "ref": "none_cw",
+        "vs": "smote_enn",
+        "metric": "macro_f1",
+        "n_blocks": 15,
+        "mean_diff": 0.021,
+        "wins": 11,
+        "losses": 4,
+        "p": 0.2078,
+        "p_holm": 0.4155
+      },
+      {
+        "scenario": "rare1",
+        "ref": "none_cw",
+        "vs": "validaug",
+        "metric": "macro_f1",
+        "n_blocks": 15,
+        "mean_diff": 0.0434,
+        "wins": 14,
+        "losses": 1,
+        "p": 0.0003,
+        "p_holm": 0.0015
+      },
+      {
+        "scenario": "rare1",
+        "ref": "none_cw_sqrt",
+        "vs": "none",
+        "metric": "macro_f1",
+        "n_blocks": 15,
+        "mean_diff": 0.0251,
+        "wins": 12,
+        "losses": 3,
+        "p": 0.0215,
+        "p_holm": 0.1077
+      },
+      {
+        "scenario": "rare1",
+        "ref": "none_cw_sqrt",
+        "vs": "ros",
+        "metric": "macro_f1",
+        "n_blocks": 15,
+        "mean_diff": -0.005,
+        "wins": 7,
+        "losses": 8,
+        "p": 0.7615,
+        "p_holm": 1.0
+      },
+      {
+        "scenario": "rare1",
+        "ref": "none_cw_sqrt",
+        "vs": "smote",
+        "metric": "macro_f1",
+        "n_blocks": 15,
+        "mean_diff": -0.0224,
+        "wins": 4,
+        "losses": 11,
+        "p": 0.1354,
+        "p_holm": 0.5415
+      },
+      {
+        "scenario": "rare1",
+        "ref": "none_cw_sqrt",
+        "vs": "smote_enn",
+        "metric": "macro_f1",
+        "n_blocks": 15,
+        "mean_diff": -0.012,
+        "wins": 5,
+        "losses": 10,
+        "p": 0.1876,
+        "p_holm": 0.5629
+      },
+      {
+        "scenario": "rare1",
+        "ref": "none_cw_sqrt",
+        "vs": "validaug",
+        "metric": "macro_f1",
+        "n_blocks": 15,
+        "mean_diff": 0.0104,
+        "wins": 7,
+        "losses": 8,
+        "p": 0.6788,
+        "p_holm": 1.0
+      }
+    ]
+  },
+  "d50": {
+    "means": [
+      {
+        "method": "none",
+        "macro_f1": 0.7478,
+        "rare_f1": 0.6874,
+        "mcc": 0.7972,
+        "validity_raw": NaN,
+        "c2st_auc": NaN,
+        "wasserstein_mean": NaN,
+        "aug_wall_s": 0.0
+      },
+      {
+        "method": "ctgan",
+        "macro_f1": 0.7392,
+        "rare_f1": 0.6789,
+        "mcc": 0.7927,
+        "validity_raw": 0.9202,
+        "c2st_auc": 1.0,
+        "wasserstein_mean": 0.4643,
+        "aug_wall_s": 6020.5842
+      },
+      {
+        "method": "tvae",
+        "macro_f1": 0.7215,
+        "rare_f1": 0.6308,
+        "mcc": 0.7854,
+        "validity_raw": 0.8716,
+        "c2st_auc": 1.0,
+        "wasserstein_mean": 0.3844,
+        "aug_wall_s": 3295.5384
+      },
+      {
+        "method": "diffusion_50k",
+        "macro_f1": 0.7477,
+        "rare_f1": 0.7025,
+        "mcc": 0.7883,
+        "validity_raw": 0.4729,
+        "c2st_auc": 0.9992,
+        "wasserstein_mean": 0.2105,
+        "aug_wall_s": 795.0117
+      },
+      {
+        "method": "diffusion",
+        "macro_f1": 0.7459,
+        "rare_f1": 0.6966,
+        "mcc": 0.7889,
+        "validity_raw": 0.4855,
+        "c2st_auc": 0.9994,
+        "wasserstein_mean": 0.22,
+        "aug_wall_s": 81.5702
+      },
+      {
+        "method": "validaug",
+        "macro_f1": 0.7511,
+        "rare_f1": 0.7007,
+        "mcc": 0.7932,
+        "validity_raw": 0.0434,
+        "c2st_auc": 0.9999,
+        "wasserstein_mean": 0.304,
+        "aug_wall_s": 2683.7916
+      }
+    ],
+    "tests": [
+      {
+        "ref": "diffusion_50k",
+        "vs": "none",
+        "metric": "macro_f1",
+        "n_blocks": 20,
+        "mean_diff": -0.0001,
+        "wins": 8,
+        "losses": 12,
+        "p": 0.4749,
+        "p_holm": 0.9498
+      },
+      {
+        "ref": "diffusion_50k",
+        "vs": "ctgan",
+        "metric": "macro_f1",
+        "n_blocks": 20,
+        "mean_diff": 0.0086,
+        "wins": 10,
+        "losses": 10,
+        "p": 0.2943,
+        "p_holm": 0.8828
+      },
+      {
+        "ref": "diffusion_50k",
+        "vs": "tvae",
+        "metric": "macro_f1",
+        "n_blocks": 20,
+        "mean_diff": 0.0262,
+        "wins": 15,
+        "losses": 5,
+        "p": 0.0064,
+        "p_holm": 0.0256
+      },
+      {
+        "ref": "diffusion_50k",
+        "vs": "diffusion",
+        "metric": "macro_f1",
+        "n_blocks": 20,
+        "mean_diff": 0.0019,
+        "wins": 12,
+        "losses": 8,
+        "p": 0.7012,
+        "p_holm": 0.9498
+      },
+      {
+        "ref": "diffusion_50k",
+        "vs": "none",
+        "metric": "rare_f1",
+        "n_blocks": 20,
+        "mean_diff": 0.0151,
+        "wins": 12,
+        "losses": 8,
+        "p": 0.2455,
+        "p_holm": 0.5306
+      },
+      {
+        "ref": "diffusion_50k",
+        "vs": "ctgan",
+        "metric": "rare_f1",
+        "n_blocks": 20,
+        "mean_diff": 0.0235,
+        "wins": 12,
+        "losses": 8,
+        "p": 0.1769,
+        "p_holm": 0.5306
+      },
+      {
+        "ref": "diffusion_50k",
+        "vs": "tvae",
+        "metric": "rare_f1",
+        "n_blocks": 20,
+        "mean_diff": 0.0717,
+        "wins": 15,
+        "losses": 5,
+        "p": 0.0023,
+        "p_holm": 0.0093
+      },
+      {
+        "ref": "diffusion_50k",
+        "vs": "diffusion",
+        "metric": "rare_f1",
+        "n_blocks": 20,
+        "mean_diff": 0.0058,
+        "wins": 10,
+        "losses": 9,
+        "p": 0.5461,
+        "p_holm": 0.5461
+      },
+      {
+        "ref": "diffusion_50k",
+        "vs": "none",
+        "metric": "mcc",
+        "n_blocks": 20,
+        "mean_diff": -0.0089,
+        "wins": 7,
+        "losses": 13,
+        "p": 0.165,
+        "p_holm": 0.6598
+      },
+      {
+        "ref": "diffusion_50k",
+        "vs": "ctgan",
+        "metric": "mcc",
+        "n_blocks": 20,
+        "mean_diff": -0.0044,
+        "wins": 11,
+        "losses": 9,
+        "p": 0.7012,
+        "p_holm": 1.0
+      },
+      {
+        "ref": "diffusion_50k",
+        "vs": "tvae",
+        "metric": "mcc",
+        "n_blocks": 20,
+        "mean_diff": 0.0029,
+        "wins": 13,
+        "losses": 7,
+        "p": 0.2305,
+        "p_holm": 0.6915
+      },
+      {
+        "ref": "diffusion_50k",
+        "vs": "diffusion",
+        "metric": "mcc",
+        "n_blocks": 20,
+        "mean_diff": -0.0005,
+        "wins": 9,
+        "losses": 11,
+        "p": 0.8124,
+        "p_holm": 1.0
+      }
+    ]
+  },
+  "nocap": {
+    "seeds_completed_by_method": {
+      "diffusion": 3,
+      "none": 3,
+      "none_cw": 3,
+      "none_cw_sqrt": 3,
+      "ros": 3,
+      "smote": 3,
+      "validaug": 3
+    },
+    "seeds_used": [
+      0,
+      1,
+      2
+    ],
+    "axes": [
+      {
+        "method": "diffusion",
+        "validity_raw": 0.4646,
+        "validity_final": 0.4646,
+        "n_syn": 143521.0,
+        "aug_wall_s": 766.5092
+      },
+      {
+        "method": "none",
+        "validity_raw": NaN,
+        "validity_final": NaN,
+        "n_syn": 0.0,
+        "aug_wall_s": 0.0001
+      },
+      {
+        "method": "none_cw",
+        "validity_raw": NaN,
+        "validity_final": NaN,
+        "n_syn": 0.0,
+        "aug_wall_s": 0.0001
+      },
+      {
+        "method": "none_cw_sqrt",
+        "validity_raw": NaN,
+        "validity_final": NaN,
+        "n_syn": 0.0,
+        "aug_wall_s": 0.0001
+      },
+      {
+        "method": "ros",
+        "validity_raw": 0.0001,
+        "validity_final": 0.0001,
+        "n_syn": 710111.3333,
+        "aug_wall_s": 31.3921
+      },
+      {
+        "method": "smote",
+        "validity_raw": 0.2259,
+        "validity_final": 0.2259,
+        "n_syn": 710111.3333,
+        "aug_wall_s": 43.6146
+      },
+      {
+        "method": "validaug",
+        "validity_raw": 0.0283,
+        "validity_final": 0.0,
+        "n_syn": 71570.3333,
+        "aug_wall_s": 4928.7278
+      }
+    ],
+    "imbalance": {
+      "cic2017_nocap": {
+        "rows": 2091588,
+        "largest": 1657693,
+        "smallest": 151,
+        "imbalance_ratio": 10978.1,
+        "n_train_real": 1080003
+      },
+      "nf_unsw_v3_nocap": {
+        "rows": 2365424,
+        "largest": 2237731,
+        "smallest": 158,
+        "imbalance_ratio": 14162.9,
+        "n_train_real": 693190
+      }
+    },
+    "tests": [
+      {
+        "ref": "none",
+        "vs": "none_cw",
+        "metric": "macro_f1",
+        "n_blocks": 12,
+        "mean_diff_method_minus_none": -0.0235,
+        "none_wins": 10,
+        "none_losses": 2,
+        "p": 0.0161,
+        "p_holm": 0.0967
+      },
+      {
+        "ref": "none",
+        "vs": "none_cw_sqrt",
+        "metric": "macro_f1",
+        "n_blocks": 12,
+        "mean_diff_method_minus_none": -0.0023,
+        "none_wins": 7,
+        "none_losses": 5,
+        "p": 0.8501,
+        "p_holm": 1.0
+      },
+      {
+        "ref": "none",
+        "vs": "ros",
+        "metric": "macro_f1",
+        "n_blocks": 12,
+        "mean_diff_method_minus_none": 0.0172,
+        "none_wins": 6,
+        "none_losses": 6,
+        "p": 0.3013,
+        "p_holm": 1.0
+      },
+      {
+        "ref": "none",
+        "vs": "smote",
+        "metric": "macro_f1",
+        "n_blocks": 12,
+        "mean_diff_method_minus_none": 0.0176,
+        "none_wins": 3,
+        "none_losses": 9,
+        "p": 0.1294,
+        "p_holm": 0.647
+      },
+      {
+        "ref": "none",
+        "vs": "diffusion",
+        "metric": "macro_f1",
+        "n_blocks": 12,
+        "mean_diff_method_minus_none": -0.0026,
+        "none_wins": 7,
+        "none_losses": 5,
+        "p": 0.6772,
+        "p_holm": 1.0
+      },
+      {
+        "ref": "none",
+        "vs": "validaug",
+        "metric": "macro_f1",
+        "n_blocks": 12,
+        "mean_diff_method_minus_none": 0.0093,
+        "none_wins": 6,
+        "none_losses": 6,
+        "p": 0.5186,
+        "p_holm": 1.0
+      },
+      {
+        "ref": "none",
+        "vs": "none_cw",
+        "metric": "rare_f1",
+        "n_blocks": 12,
+        "mean_diff_method_minus_none": -0.0226,
+        "none_wins": 7,
+        "none_losses": 5,
+        "p": 0.3013,
+        "p_holm": 1.0
+      },
+      {
+        "ref": "none",
+        "vs": "none_cw_sqrt",
+        "metric": "rare_f1",
+        "n_blocks": 12,
+        "mean_diff_method_minus_none": -0.0012,
+        "none_wins": 5,
+        "none_losses": 7,
+        "p": 0.9697,
+        "p_holm": 1.0
+      },
+      {
+        "ref": "none",
+        "vs": "ros",
+        "metric": "rare_f1",
+        "n_blocks": 12,
+        "mean_diff_method_minus_none": 0.0239,
+        "none_wins": 6,
+        "none_losses": 6,
+        "p": 0.3013,
+        "p_holm": 1.0
+      },
+      {
+        "ref": "none",
+        "vs": "smote",
+        "metric": "rare_f1",
+        "n_blocks": 12,
+        "mean_diff_method_minus_none": 0.025,
+        "none_wins": 3,
+        "none_losses": 9,
+        "p": 0.1294,
+        "p_holm": 0.7764
+      },
+      {
+        "ref": "none",
+        "vs": "diffusion",
+        "metric": "rare_f1",
+        "n_blocks": 12,
+        "mean_diff_method_minus_none": -0.0031,
+        "none_wins": 7,
+        "none_losses": 5,
+        "p": 0.791,
+        "p_holm": 1.0
+      },
+      {
+        "ref": "none",
+        "vs": "validaug",
+        "metric": "rare_f1",
+        "n_blocks": 12,
+        "mean_diff_method_minus_none": 0.0135,
+        "none_wins": 6,
+        "none_losses": 6,
+        "p": 0.5186,
+        "p_holm": 1.0
+      },
+      {
+        "ref": "none",
+        "vs": "none_cw",
+        "metric": "mcc",
+        "n_blocks": 12,
+        "mean_diff_method_minus_none": -0.0284,
+        "none_wins": 10,
+        "none_losses": 2,
+        "p": 0.0024,
+        "p_holm": 0.0146
+      },
+      {
+        "ref": "none",
+        "vs": "none_cw_sqrt",
+        "metric": "mcc",
+        "n_blocks": 12,
+        "mean_diff_method_minus_none": -0.0097,
+        "none_wins": 10,
+        "none_losses": 2,
+        "p": 0.0269,
+        "p_holm": 0.1074
+      },
+      {
+        "ref": "none",
+        "vs": "ros",
+        "metric": "mcc",
+        "n_blocks": 12,
+        "mean_diff_method_minus_none": 0.001,
+        "none_wins": 2,
+        "none_losses": 10,
+        "p": 0.0522,
+        "p_holm": 0.1567
+      },
+      {
+        "ref": "none",
+        "vs": "smote",
+        "metric": "mcc",
+        "n_blocks": 12,
+        "mean_diff_method_minus_none": 0.0005,
+        "none_wins": 3,
+        "none_losses": 9,
+        "p": 0.2661,
+        "p_holm": 0.5322
+      },
+      {
+        "ref": "none",
+        "vs": "diffusion",
+        "metric": "mcc",
+        "n_blocks": 12,
+        "mean_diff_method_minus_none": -0.0096,
+        "none_wins": 10,
+        "none_losses": 2,
+        "p": 0.0093,
+        "p_holm": 0.0464
+      },
+      {
+        "ref": "none",
+        "vs": "validaug",
+        "metric": "mcc",
+        "n_blocks": 12,
+        "mean_diff_method_minus_none": -0.0018,
+        "none_wins": 8,
+        "none_losses": 4,
+        "p": 0.4697,
+        "p_holm": 0.5322
+      }
+    ],
+    "macro_f1": [
+      {
+        "method": "none",
+        "cic2017_nocap": 0.8334,
+        "nf_unsw_v3_nocap": 0.5122
+      },
+      {
+        "method": "none_cw",
+        "cic2017_nocap": 0.8042,
+        "nf_unsw_v3_nocap": 0.4944
+      },
+      {
+        "method": "none_cw_sqrt",
+        "cic2017_nocap": 0.8266,
+        "nf_unsw_v3_nocap": 0.5144
+      },
+      {
+        "method": "ros",
+        "cic2017_nocap": 0.8539,
+        "nf_unsw_v3_nocap": 0.5262
+      },
+      {
+        "method": "smote",
+        "cic2017_nocap": 0.8497,
+        "nf_unsw_v3_nocap": 0.5312
+      },
+      {
+        "method": "diffusion",
+        "cic2017_nocap": 0.8431,
+        "nf_unsw_v3_nocap": 0.4974
+      },
+      {
+        "method": "validaug",
+        "cic2017_nocap": 0.8435,
+        "nf_unsw_v3_nocap": 0.5208
+      }
+    ]
+  },
+  "tabsota": {
+    "datasets": [
+      "cic2017_fixed",
+      "nf_bot_v3",
+      "nf_cic2018_v3",
+      "nf_ton_v3",
+      "nf_unsw_v3"
+    ],
+    "seeds": [
+      0
+    ],
+    "means": [
+      {
+        "method": "none",
+        "macro_f1": 0.7469,
+        "rare_f1": 0.6922,
+        "mcc": 0.796,
+        "validity_raw": NaN,
+        "c2st_auc": NaN,
+        "wasserstein_mean": NaN,
+        "aug_wall_s": 0.0001
+      },
+      {
+        "method": "smote",
+        "macro_f1": 0.7401,
+        "rare_f1": 0.7078,
+        "mcc": 0.7781,
+        "validity_raw": 0.165,
+        "c2st_auc": 0.6899,
+        "wasserstein_mean": 0.163,
+        "aug_wall_s": 5.653
+      },
+      {
+        "method": "ctgan",
+        "macro_f1": 0.7431,
+        "rare_f1": 0.6973,
+        "mcc": 0.7933,
+        "validity_raw": 0.9254,
+        "c2st_auc": 1.0,
+        "wasserstein_mean": 0.5317,
+        "aug_wall_s": 6148.2
+      },
+      {
+        "method": "tvae",
+        "macro_f1": 0.7226,
+        "rare_f1": 0.6041,
+        "mcc": 0.7877,
+        "validity_raw": 0.8664,
+        "c2st_auc": 1.0,
+        "wasserstein_mean": 0.4178,
+        "aug_wall_s": 3076.9164
+      },
+      {
+        "method": "tabddpm",
+        "macro_f1": 0.7375,
+        "rare_f1": 0.6964,
+        "mcc": 0.7876,
+        "validity_raw": 0.9884,
+        "c2st_auc": 1.0,
+        "wasserstein_mean": 2.1983,
+        "aug_wall_s": 11156.1382
+      },
+      {
+        "method": "tabsyn",
+        "macro_f1": 0.7151,
+        "rare_f1": 0.6242,
+        "mcc": 0.7824,
+        "validity_raw": 0.5153,
+        "c2st_auc": 0.9685,
+        "wasserstein_mean": 0.1772,
+        "aug_wall_s": 16815.9137
+      },
+      {
+        "method": "diffusion",
+        "macro_f1": 0.7479,
+        "rare_f1": 0.7071,
+        "mcc": 0.7886,
+        "validity_raw": 0.4932,
+        "c2st_auc": 0.9994,
+        "wasserstein_mean": 0.2231,
+        "aug_wall_s": 86.0943
+      },
+      {
+        "method": "validaug",
+        "macro_f1": 0.7532,
+        "rare_f1": 0.6991,
+        "mcc": 0.7955,
+        "validity_raw": 0.0348,
+        "c2st_auc": 0.9998,
+        "wasserstein_mean": 0.2782,
+        "aug_wall_s": 2605.0848
+      }
+    ],
+    "tests": [
+      {
+        "ref": "tabddpm",
+        "vs": "none",
+        "metric": "macro_f1",
+        "n_blocks": 20,
+        "mean_diff": -0.0094,
+        "wins": 7,
+        "losses": 13,
+        "p": 0.2024,
+        "p_holm": 1.0
+      },
+      {
+        "ref": "tabddpm",
+        "vs": "smote",
+        "metric": "macro_f1",
+        "n_blocks": 20,
+        "mean_diff": -0.0027,
+        "wins": 6,
+        "losses": 14,
+        "p": 0.2611,
+        "p_holm": 1.0
+      },
+      {
+        "ref": "tabddpm",
+        "vs": "ctgan",
+        "metric": "macro_f1",
+        "n_blocks": 20,
+        "mean_diff": -0.0056,
+        "wins": 9,
+        "losses": 11,
+        "p": 0.9563,
+        "p_holm": 1.0
+      },
+      {
+        "ref": "tabddpm",
+        "vs": "tvae",
+        "metric": "macro_f1",
+        "n_blocks": 20,
+        "mean_diff": 0.0149,
+        "wins": 11,
+        "losses": 9,
+        "p": 0.3683,
+        "p_holm": 1.0
+      },
+      {
+        "ref": "tabddpm",
+        "vs": "diffusion",
+        "metric": "macro_f1",
+        "n_blocks": 20,
+        "mean_diff": -0.0104,
+        "wins": 9,
+        "losses": 11,
+        "p": 0.6477,
+        "p_holm": 1.0
+      },
+      {
+        "ref": "tabddpm",
+        "vs": "validaug",
+        "metric": "macro_f1",
+        "n_blocks": 20,
+        "mean_diff": -0.0157,
+        "wins": 5,
+        "losses": 15,
+        "p": 0.0441,
+        "p_holm": 0.2643
+      },
+      {
+        "ref": "tabddpm",
+        "vs": "none",
+        "metric": "rare_f1",
+        "n_blocks": 20,
+        "mean_diff": 0.0042,
+        "wins": 7,
+        "losses": 12,
+        "p": 0.6292,
+        "p_holm": 1.0
+      },
+      {
+        "ref": "tabddpm",
+        "vs": "smote",
+        "metric": "rare_f1",
+        "n_blocks": 20,
+        "mean_diff": -0.0114,
+        "wins": 4,
+        "losses": 15,
+        "p": 0.0486,
+        "p_holm": 0.2917
+      },
+      {
+        "ref": "tabddpm",
+        "vs": "ctgan",
+        "metric": "rare_f1",
+        "n_blocks": 20,
+        "mean_diff": -0.0009,
+        "wins": 9,
+        "losses": 9,
+        "p": 0.8446,
+        "p_holm": 1.0
+      },
+      {
+        "ref": "tabddpm",
+        "vs": "tvae",
+        "metric": "rare_f1",
+        "n_blocks": 20,
+        "mean_diff": 0.0923,
+        "wins": 12,
+        "losses": 8,
+        "p": 0.0583,
+        "p_holm": 0.2917
+      },
+      {
+        "ref": "tabddpm",
+        "vs": "diffusion",
+        "metric": "rare_f1",
+        "n_blocks": 20,
+        "mean_diff": -0.0107,
+        "wins": 6,
+        "losses": 13,
+        "p": 0.2432,
+        "p_holm": 0.9728
+      },
+      {
+        "ref": "tabddpm",
+        "vs": "validaug",
+        "metric": "rare_f1",
+        "n_blocks": 20,
+        "mean_diff": -0.0027,
+        "wins": 7,
+        "losses": 12,
+        "p": 0.5461,
+        "p_holm": 1.0
+      },
+      {
+        "ref": "tabddpm",
+        "vs": "none",
+        "metric": "mcc",
+        "n_blocks": 20,
+        "mean_diff": -0.0084,
+        "wins": 6,
+        "losses": 14,
+        "p": 0.0266,
+        "p_holm": 0.1599
+      },
+      {
+        "ref": "tabddpm",
+        "vs": "smote",
+        "metric": "mcc",
+        "n_blocks": 20,
+        "mean_diff": 0.0095,
+        "wins": 7,
+        "losses": 13,
+        "p": 0.9563,
+        "p_holm": 1.0
+      },
+      {
+        "ref": "tabddpm",
+        "vs": "ctgan",
+        "metric": "mcc",
+        "n_blocks": 20,
+        "mean_diff": -0.0057,
+        "wins": 9,
+        "losses": 11,
+        "p": 0.5706,
+        "p_holm": 1.0
+      },
+      {
+        "ref": "tabddpm",
+        "vs": "tvae",
+        "metric": "mcc",
+        "n_blocks": 20,
+        "mean_diff": -0.0001,
+        "wins": 14,
+        "losses": 6,
+        "p": 0.0826,
+        "p_holm": 0.4128
+      },
+      {
+        "ref": "tabddpm",
+        "vs": "diffusion",
+        "metric": "mcc",
+        "n_blocks": 20,
+        "mean_diff": -0.001,
+        "wins": 11,
+        "losses": 9,
+        "p": 0.4304,
+        "p_holm": 1.0
+      },
+      {
+        "ref": "tabddpm",
+        "vs": "validaug",
+        "metric": "mcc",
+        "n_blocks": 20,
+        "mean_diff": -0.0079,
+        "wins": 8,
+        "losses": 12,
+        "p": 0.1893,
+        "p_holm": 0.7574
+      },
+      {
+        "ref": "tabsyn",
+        "vs": "none",
+        "metric": "macro_f1",
+        "n_blocks": 20,
+        "mean_diff": -0.0318,
+        "wins": 3,
+        "losses": 17,
+        "p": 0.0003,
+        "p_holm": 0.0013
+      },
+      {
+        "ref": "tabsyn",
+        "vs": "smote",
+        "metric": "macro_f1",
+        "n_blocks": 20,
+        "mean_diff": -0.0251,
+        "wins": 5,
+        "losses": 15,
+        "p": 0.0056,
+        "p_holm": 0.0112
+      },
+      {
+        "ref": "tabsyn",
+        "vs": "ctgan",
+        "metric": "macro_f1",
+        "n_blocks": 20,
+        "mean_diff": -0.028,
+        "wins": 4,
+        "losses": 16,
+        "p": 0.0007,
+        "p_holm": 0.0028
+      },
+      {
+        "ref": "tabsyn",
+        "vs": "tvae",
+        "metric": "macro_f1",
+        "n_blocks": 20,
+        "mean_diff": -0.0075,
+        "wins": 9,
+        "losses": 11,
+        "p": 0.5706,
+        "p_holm": 0.5706
+      },
+      {
+        "ref": "tabsyn",
+        "vs": "diffusion",
+        "metric": "macro_f1",
+        "n_blocks": 20,
+        "mean_diff": -0.0328,
+        "wins": 4,
+        "losses": 16,
+        "p": 0.0017,
+        "p_holm": 0.0051
+      },
+      {
+        "ref": "tabsyn",
+        "vs": "validaug",
+        "metric": "macro_f1",
+        "n_blocks": 20,
+        "mean_diff": -0.0381,
+        "wins": 4,
+        "losses": 16,
+        "p": 0.0001,
+        "p_holm": 0.0006
+      },
+      {
+        "ref": "tabsyn",
+        "vs": "none",
+        "metric": "rare_f1",
+        "n_blocks": 20,
+        "mean_diff": -0.068,
+        "wins": 5,
+        "losses": 14,
+        "p": 0.0176,
+        "p_holm": 0.0527
+      },
+      {
+        "ref": "tabsyn",
+        "vs": "smote",
+        "metric": "rare_f1",
+        "n_blocks": 20,
+        "mean_diff": -0.0837,
+        "wins": 3,
+        "losses": 16,
+        "p": 0.0015,
+        "p_holm": 0.0089
+      },
+      {
+        "ref": "tabsyn",
+        "vs": "ctgan",
+        "metric": "rare_f1",
+        "n_blocks": 20,
+        "mean_diff": -0.0731,
+        "wins": 4,
+        "losses": 15,
+        "p": 0.0043,
+        "p_holm": 0.0214
+      },
+      {
+        "ref": "tabsyn",
+        "vs": "tvae",
+        "metric": "rare_f1",
+        "n_blocks": 20,
+        "mean_diff": 0.02,
+        "wins": 9,
+        "losses": 11,
+        "p": 0.9563,
+        "p_holm": 0.9563
+      },
+      {
+        "ref": "tabsyn",
+        "vs": "diffusion",
+        "metric": "rare_f1",
+        "n_blocks": 20,
+        "mean_diff": -0.0829,
+        "wins": 3,
+        "losses": 16,
+        "p": 0.0048,
+        "p_holm": 0.0214
+      },
+      {
+        "ref": "tabsyn",
+        "vs": "validaug",
+        "metric": "rare_f1",
+        "n_blocks": 20,
+        "mean_diff": -0.075,
+        "wins": 5,
+        "losses": 14,
+        "p": 0.0242,
+        "p_holm": 0.0527
+      },
+      {
+        "ref": "tabsyn",
+        "vs": "none",
+        "metric": "mcc",
+        "n_blocks": 20,
+        "mean_diff": -0.0135,
+        "wins": 2,
+        "losses": 18,
+        "p": 0.0003,
+        "p_holm": 0.0016
+      },
+      {
+        "ref": "tabsyn",
+        "vs": "smote",
+        "metric": "mcc",
+        "n_blocks": 20,
+        "mean_diff": 0.0043,
+        "wins": 7,
+        "losses": 13,
+        "p": 0.5958,
+        "p_holm": 0.5958
+      },
+      {
+        "ref": "tabsyn",
+        "vs": "ctgan",
+        "metric": "mcc",
+        "n_blocks": 20,
+        "mean_diff": -0.0108,
+        "wins": 4,
+        "losses": 16,
+        "p": 0.0007,
+        "p_holm": 0.0028
+      },
+      {
+        "ref": "tabsyn",
+        "vs": "tvae",
+        "metric": "mcc",
+        "n_blocks": 20,
+        "mean_diff": -0.0053,
+        "wins": 8,
+        "losses": 12,
+        "p": 0.2943,
+        "p_holm": 0.5885
+      },
+      {
+        "ref": "tabsyn",
+        "vs": "diffusion",
+        "metric": "mcc",
+        "n_blocks": 20,
+        "mean_diff": -0.0062,
+        "wins": 4,
+        "losses": 16,
+        "p": 0.0023,
+        "p_holm": 0.007
+      },
+      {
+        "ref": "tabsyn",
+        "vs": "validaug",
+        "metric": "mcc",
+        "n_blocks": 20,
+        "mean_diff": -0.013,
+        "wins": 3,
+        "losses": 17,
+        "p": 0.0,
+        "p_holm": 0.0002
+      }
+    ]
+  }
+}

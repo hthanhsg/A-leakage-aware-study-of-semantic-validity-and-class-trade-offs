@@ -30,7 +30,7 @@ python scripts/run_grid.py --exp configs/exp_smoke.yaml
 
 ## 2. Data and preprocessing
 
-The datasets are not redistributed. Download them from their providers, put them under `data/raw/<name>/` and set `paths` in `configs/datasets.yaml`. Two feature families are supported:
+The datasets are not redistributed. Download links, the expected folder layout and the requested citations are given in [`data/README.md`](data/README.md); the paths are set in `configs/datasets.yaml`. Two feature families are supported:
 
 | Family | Datasets | Multi-class label | Time (for splitting) | Host (group split) |
 |---|---|---|---|---|
@@ -52,7 +52,7 @@ The datasets are not redistributed. Download them from their providers, put them
 Dataset-specific decisions (`configs/datasets.yaml`):
 
 - **NF-v3**: `SRC_TO_DST_SECOND_BYTES` and `DST_TO_SRC_SECOND_BYTES` are dropped. They are bytes divided by duration, which gives inf or NaN for zero-duration flows, and the information is already contained in `IN_BYTES`, `OUT_BYTES` and `FLOW_DURATION`.
-- **NF-CSE-CIC-IDS2018-v3**: `FTP-BruteForce` and `DoS_attacks-SlowHTTPTest` are dropped. In our audit every flow of these two classes is a label conflict, consistent with the report that these two attacks were erroneously collected and contain only SYN and RST packets (Liu and Patras, 2022) and with the errors documented for CSE-CIC-IDS2018 by Liu et al. (2022).
+- **NF-CSE-CIC-IDS2018-v3**: `FTP-BruteForce` and `DoS_attacks-SlowHTTPTest` are dropped. These two attacks were erroneously collected and their traffic contains only SYN and RST packets (Liu and Patras, 2022), in line with the errors documented for CSE-CIC-IDS2018 by Liu et al. (2022). The classes are removed before the audit (`classes_dropped_config` in `audit.json`: 386,720 and 105,550 flows).
 
 Each dataset receives an `audit.json` (rows, columns, types, duplicates and label conflicts per class, inf/NaN per column, class distribution, availability of time and host). Table 2 of the article is built from these files.
 

@@ -1,0 +1,31 @@
+{
+  "group_fallback_classes": [
+    "DoS_attacks-GoldenEye",
+    "DoS_attacks-Hulk",
+    "DoS_attacks-Slowloris",
+    "SSH-Bruteforce"
+  ],
+  "train_conflicts_policy": "majority",
+  "train_conflict_removed": {
+    "Infilteration": 18019,
+    "Benign": 8471,
+    "Brute_Force_-Web": 187,
+    "SQL_Injection": 96,
+    "Brute_Force_-XSS": 15
+  },
+  "sizes_before_dedup": [
+    797680,
+    275550,
+    280012
+  ],
+  "dedup_removed": {
+    "train_internal": 400297,
+    "val_overlap_train": 89482,
+    "test_overlap_trainval": 109644
+  },
+  "sizes": [
+    397383,
+    186068,
+    170368
+  ]
+}

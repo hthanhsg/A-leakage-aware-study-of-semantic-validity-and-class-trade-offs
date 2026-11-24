@@ -1,0 +1,268 @@
+2026-11-15 19:03:23,302 INFO validaug | class weights:
+      method scenario  n_cells  macro_f1  rare_f1   mcc
+        none     full       75     0.742    0.676 0.795
+     none_cw     full       75     0.725    0.630 0.777
+none_cw_sqrt     full       75     0.737    0.674 0.785
+         ros     full       75     0.738    0.662 0.783
+       smote     full       75     0.739    0.681 0.780
+   smote_enn     full       75     0.735    0.672 0.776
+   diffusion     full       75     0.742    0.685 0.787
+    validaug     full       75     0.746    0.691 0.791
+        none    rare5       45     0.651    0.588 0.767
+     none_cw    rare5       45     0.700    0.648 0.767
+none_cw_sqrt    rare5       45     0.681    0.621 0.770
+         ros    rare5       45     0.683    0.629 0.773
+       smote    rare5       45     0.693    0.642 0.774
+   smote_enn    rare5       45     0.702    0.651 0.782
+   diffusion    rare5       45     0.681    0.627 0.772
+    validaug    rare5       45     0.672    0.617 0.768
+        none    rare1       45     0.592    0.515 0.732
+     none_cw    rare1       45     0.650    0.589 0.743
+none_cw_sqrt    rare1       45     0.617    0.548 0.739
+         ros    rare1       45     0.622    0.557 0.741
+       smote    rare1       45     0.639    0.576 0.748
+   smote_enn    rare1       45     0.629    0.563 0.744
+   diffusion    rare1       45     0.620    0.552 0.737
+    validaug    rare1       45     0.607    0.535 0.735
+2026-11-15 19:03:23,400 INFO validaug | diffusion 50k:
+dataset        cic2017_fixed  nf_bot_v3  nf_cic2018_v3  nf_ton_v3  nf_unsw_v3   mean
+method                                                                              
+none                   0.892      0.703          0.781      0.848       0.514  0.748
+ctgan                  0.891      0.675          0.777      0.846       0.507  0.739
+tvae                   0.905      0.614          0.757      0.824       0.507  0.722
+diffusion_50k          0.894      0.691          0.787      0.847       0.519  0.748
+diffusion              0.896      0.690          0.780      0.847       0.517  0.746
+validaug               0.896      0.695          0.784      0.847       0.534  0.751
+          ref        vs   metric  n_blocks  mean_diff  wins  losses      p  p_holm
+diffusion_50k      none macro_f1        20    -0.0001     8      12 0.4749  0.9498
+diffusion_50k     ctgan macro_f1        20     0.0086    10      10 0.2943  0.8828
+diffusion_50k      tvae macro_f1        20     0.0262    15       5 0.0064  0.0256
+diffusion_50k diffusion macro_f1        20     0.0019    12       8 0.7012  0.9498
+diffusion_50k      none  rare_f1        20     0.0151    12       8 0.2455  0.5306
+diffusion_50k     ctgan  rare_f1        20     0.0235    12       8 0.1769  0.5306
+diffusion_50k      tvae  rare_f1        20     0.0717    15       5 0.0023  0.0093
+diffusion_50k diffusion  rare_f1        20     0.0058    10       9 0.5461  0.5461
+diffusion_50k      none      mcc        20    -0.0089     7      13 0.1650  0.6598
+diffusion_50k     ctgan      mcc        20    -0.0044    11       9 0.7012  1.0000
+diffusion_50k      tvae      mcc        20     0.0029    13       7 0.2305  0.6915
+diffusion_50k diffusion      mcc        20    -0.0005     9      11 0.8124  1.0000
+2026-11-15 19:03:23,483 INFO validaug | no cap: {'cic2017_nocap': {'rows': 2091588, 'largest': 1657693, 'smallest': 151, 'imbalance_ratio': 10978.1, 'n_train_real': 1080003}, 'nf_unsw_v3_nocap': {'rows': 2365424, 'largest': 2237731, 'smallest': 158, 'imbalance_ratio': 14162.9, 'n_train_real': 693190}}
+dataset       cic2017_nocap  nf_unsw_v3_nocap
+method                                       
+none                  0.833             0.512
+none_cw               0.804             0.494
+none_cw_sqrt          0.827             0.514
+ros                   0.854             0.526
+smote                 0.850             0.531
+ ref           vs   metric  n_blocks  mean_diff_method_minus_none  none_wins  none_losses      p  p_holm
+none      none_cw macro_f1        12                      -0.0235         10            2 0.0161  0.0645
+none none_cw_sqrt macro_f1        12                      -0.0023          7            5 0.8501  0.8501
+none          ros macro_f1        12                       0.0172          6            6 0.3013  0.6025
+none        smote macro_f1        12                       0.0176          3            9 0.1294  0.3882
+none      none_cw  rare_f1        12                      -0.0226          7            5 0.3013  0.9038
+none none_cw_sqrt  rare_f1        12                      -0.0012          5            7 0.9697  0.9697
+none          ros  rare_f1        12                       0.0239          6            6 0.3013  0.9038
+none        smote  rare_f1        12                       0.0250          3            9 0.1294  0.5176
+none      none_cw      mcc        12                      -0.0284         10            2 0.0024  0.0098
+none none_cw_sqrt      mcc        12                      -0.0097         10            2 0.0269  0.0806
+none          ros      mcc        12                       0.0010          2           10 0.0522  0.1045
+none        smote      mcc        12                       0.0005          3            9 0.2661  0.2661
+2026-11-15 19:03:38,503 INFO validaug | c2st [nf_unsw_v3|smote] AUC=0.5746, without top-5 features 0.5683, top feature src_to_dst_iat_max (9% of gain)
+2026-11-15 19:03:46,446 INFO validaug | c2st [nf_unsw_v3|diffusion] AUC=0.9987, without top-5 features 0.9481, top feature tcp_win_max_out (80% of gain)
+2026-11-15 19:03:54,519 INFO validaug | c2st [nf_unsw_v3|diffusion_proj] AUC=0.9987, without top-5 features 0.9353, top feature tcp_win_max_out (81% of gain)
+2026-11-15 19:04:02,143 INFO validaug | c2st [nf_unsw_v3|validaug] AUC=0.9995, without top-5 features 0.9829, top feature tcp_win_max_in (78% of gain)
+2026-11-15 19:04:18,818 INFO validaug | c2st [nf_ton_v3|smote] AUC=0.5449, without top-5 features 0.5378, top feature src_to_dst_avg_throughput (8% of gain)
+2026-11-15 19:04:27,263 INFO validaug | c2st [nf_ton_v3|diffusion] AUC=0.9985, without top-5 features 0.9776, top feature tcp_win_max_in (55% of gain)
+2026-11-15 19:04:36,489 INFO validaug | c2st [nf_ton_v3|diffusion_proj] AUC=0.9985, without top-5 features 0.9776, top feature tcp_win_max_in (55% of gain)
+2026-11-15 19:04:43,444 INFO validaug | c2st [nf_ton_v3|validaug] AUC=0.9992, without top-5 features 0.9908, top feature tcp_win_max_in (57% of gain)
+2026-11-15 19:04:55,177 INFO validaug | c2st [nf_bot_v3|smote] AUC=0.5543, without top-5 features 0.5343, top feature src_to_dst_avg_throughput (9% of gain)
+2026-11-15 19:05:03,190 INFO validaug | c2st [nf_bot_v3|diffusion] AUC=0.9996, without top-5 features 0.9968, top feature tcp_win_max_in (56% of gain)
+2026-11-15 19:05:11,513 INFO validaug | c2st [nf_bot_v3|diffusion_proj] AUC=0.9996, without top-5 features 0.9974, top feature tcp_win_max_in (56% of gain)
+2026-11-15 19:05:17,047 INFO validaug | c2st [nf_bot_v3|validaug] AUC=0.9998, without top-5 features 0.9994, top feature server_tcp_flags_ack (21% of gain)
+2026-11-15 19:05:33,015 INFO validaug | c2st [nf_cic2018_v3|smote] AUC=0.4978, without top-5 features 0.4938, top feature src_to_dst_iat_max (12% of gain)
+2026-11-15 19:05:40,379 INFO validaug | c2st [nf_cic2018_v3|diffusion] AUC=0.9995, without top-5 features 0.9949, top feature tcp_win_max_in (73% of gain)
+2026-11-15 19:05:47,700 INFO validaug | c2st [nf_cic2018_v3|diffusion_proj] AUC=0.9996, without top-5 features 0.9950, top feature tcp_win_max_in (74% of gain)
+2026-11-15 19:05:53,539 INFO validaug | c2st [nf_cic2018_v3|validaug] AUC=1.0000, without top-5 features 0.9992, top feature tcp_win_max_out (40% of gain)
+2026-11-15 19:06:16,648 INFO validaug | c2st [cic2017_fixed|smote] AUC=0.6179, without top-5 features 0.6255, top feature flow_iat_min (8% of gain)
+2026-11-15 19:06:25,550 INFO validaug | c2st [cic2017_fixed|diffusion] AUC=1.0000, without top-5 features 0.9999, top feature fwd_init_win_bytes (82% of gain)
+2026-11-15 19:06:34,646 INFO validaug | c2st [cic2017_fixed|diffusion_proj] AUC=1.0000, without top-5 features 0.9999, top feature fwd_init_win_bytes (82% of gain)
+2026-11-15 19:06:42,345 INFO validaug | c2st [cic2017_fixed|validaug] AUC=1.0000, without top-5 features 0.9999, top feature fwd_init_win_bytes (41% of gain)
+2026-11-15 19:06:42,378 INFO validaug | written to runs/phaseG_analysis
+2026-11-17 09:34:19,022 INFO validaug | class weights:
+      method scenario  n_cells  macro_f1  rare_f1   mcc
+        none     full       75     0.742    0.676 0.795
+     none_cw     full       75     0.725    0.630 0.777
+none_cw_sqrt     full       75     0.737    0.674 0.785
+         ros     full       75     0.738    0.662 0.783
+       smote     full       75     0.739    0.681 0.780
+   smote_enn     full       75     0.735    0.672 0.776
+   diffusion     full       75     0.742    0.685 0.787
+    validaug     full       75     0.746    0.691 0.791
+        none    rare5       45     0.651    0.588 0.767
+     none_cw    rare5       45     0.700    0.648 0.767
+none_cw_sqrt    rare5       45     0.681    0.621 0.770
+         ros    rare5       45     0.683    0.629 0.773
+       smote    rare5       45     0.693    0.642 0.774
+   smote_enn    rare5       45     0.702    0.651 0.782
+   diffusion    rare5       45     0.681    0.627 0.772
+    validaug    rare5       45     0.672    0.617 0.768
+        none    rare1       45     0.592    0.515 0.732
+     none_cw    rare1       45     0.650    0.589 0.743
+none_cw_sqrt    rare1       45     0.617    0.548 0.739
+         ros    rare1       45     0.622    0.557 0.741
+       smote    rare1       45     0.639    0.576 0.748
+   smote_enn    rare1       45     0.629    0.563 0.744
+   diffusion    rare1       45     0.620    0.552 0.737
+    validaug    rare1       45     0.607    0.535 0.735
+2026-11-17 09:34:19,112 INFO validaug | diffusion 50k:
+dataset        cic2017_fixed  nf_bot_v3  nf_cic2018_v3  nf_ton_v3  nf_unsw_v3   mean
+method                                                                              
+none                   0.892      0.703          0.781      0.848       0.514  0.748
+ctgan                  0.891      0.675          0.777      0.846       0.507  0.739
+tvae                   0.905      0.614          0.757      0.824       0.507  0.722
+diffusion_50k          0.894      0.691          0.787      0.847       0.519  0.748
+diffusion              0.896      0.690          0.780      0.847       0.517  0.746
+validaug               0.896      0.695          0.784      0.847       0.534  0.751
+          ref        vs   metric  n_blocks  mean_diff  wins  losses      p  p_holm
+diffusion_50k      none macro_f1        20    -0.0001     8      12 0.4749  0.9498
+diffusion_50k     ctgan macro_f1        20     0.0086    10      10 0.2943  0.8828
+diffusion_50k      tvae macro_f1        20     0.0262    15       5 0.0064  0.0256
+diffusion_50k diffusion macro_f1        20     0.0019    12       8 0.7012  0.9498
+diffusion_50k      none  rare_f1        20     0.0151    12       8 0.2455  0.5306
+diffusion_50k     ctgan  rare_f1        20     0.0235    12       8 0.1769  0.5306
+diffusion_50k      tvae  rare_f1        20     0.0717    15       5 0.0023  0.0093
+diffusion_50k diffusion  rare_f1        20     0.0058    10       9 0.5461  0.5461
+diffusion_50k      none      mcc        20    -0.0089     7      13 0.1650  0.6598
+diffusion_50k     ctgan      mcc        20    -0.0044    11       9 0.7012  1.0000
+diffusion_50k      tvae      mcc        20     0.0029    13       7 0.2305  0.6915
+diffusion_50k diffusion      mcc        20    -0.0005     9      11 0.8124  1.0000
+2026-11-17 09:34:19,212 INFO validaug | no cap: {'cic2017_nocap': {'rows': 2091588, 'largest': 1657693, 'smallest': 151, 'imbalance_ratio': 10978.1, 'n_train_real': 1080003}, 'nf_unsw_v3_nocap': {'rows': 2365424, 'largest': 2237731, 'smallest': 158, 'imbalance_ratio': 14162.9, 'n_train_real': 693190}}
+dataset       cic2017_nocap  nf_unsw_v3_nocap
+method                                       
+none                  0.833             0.512
+none_cw               0.804             0.494
+none_cw_sqrt          0.827             0.514
+ros                   0.854             0.526
+smote                 0.850             0.531
+diffusion             0.843             0.497
+validaug              0.843             0.521
+ ref           vs   metric  n_blocks  mean_diff_method_minus_none  none_wins  none_losses      p  p_holm
+none      none_cw macro_f1        12                      -0.0235         10            2 0.0161  0.0967
+none none_cw_sqrt macro_f1        12                      -0.0023          7            5 0.8501  1.0000
+none          ros macro_f1        12                       0.0172          6            6 0.3013  1.0000
+none        smote macro_f1        12                       0.0176          3            9 0.1294  0.6470
+none    diffusion macro_f1        12                      -0.0026          7            5 0.6772  1.0000
+none     validaug macro_f1        12                       0.0093          6            6 0.5186  1.0000
+none      none_cw  rare_f1        12                      -0.0226          7            5 0.3013  1.0000
+none none_cw_sqrt  rare_f1        12                      -0.0012          5            7 0.9697  1.0000
+none          ros  rare_f1        12                       0.0239          6            6 0.3013  1.0000
+none        smote  rare_f1        12                       0.0250          3            9 0.1294  0.7764
+none    diffusion  rare_f1        12                      -0.0031          7            5 0.7910  1.0000
+none     validaug  rare_f1        12                       0.0135          6            6 0.5186  1.0000
+none      none_cw      mcc        12                      -0.0284         10            2 0.0024  0.0146
+none none_cw_sqrt      mcc        12                      -0.0097         10            2 0.0269  0.1074
+none          ros      mcc        12                       0.0010          2           10 0.0522  0.1567
+none        smote      mcc        12                       0.0005          3            9 0.2661  0.5322
+none    diffusion      mcc        12                      -0.0096         10            2 0.0093  0.0464
+none     validaug      mcc        12                      -0.0018          8            4 0.4697  0.5322
+2026-11-17 09:34:19,360 INFO validaug | TabDDPM / TabSyn:
+dataset    cic2017_fixed  nf_bot_v3  nf_cic2018_v3  nf_ton_v3  nf_unsw_v3   mean
+method                                                                          
+none               0.894      0.704          0.784      0.847       0.506  0.747
+smote              0.902      0.655          0.775      0.851       0.518  0.740
+ctgan              0.888      0.696          0.781      0.844       0.506  0.743
+tvae               0.922      0.587          0.770      0.821       0.513  0.723
+tabddpm            0.903      0.643          0.797      0.842       0.503  0.737
+tabsyn             0.847      0.642          0.761      0.845       0.481  0.715
+diffusion          0.895      0.695          0.783      0.843       0.524  0.748
+validaug           0.892      0.703          0.779      0.852       0.540  0.753
+2026-11-17 09:34:19,366 INFO validaug | written to runs/phaseG_analysis
+2026-11-17 09:36:37,018 INFO validaug | class weights:
+      method scenario  n_cells  macro_f1  rare_f1   mcc
+        none     full       75     0.742    0.676 0.795
+     none_cw     full       75     0.725    0.630 0.777
+none_cw_sqrt     full       75     0.737    0.674 0.785
+         ros     full       75     0.738    0.662 0.783
+       smote     full       75     0.739    0.681 0.780
+   smote_enn     full       75     0.735    0.672 0.776
+   diffusion     full       75     0.742    0.685 0.787
+    validaug     full       75     0.746    0.691 0.791
+        none    rare5       45     0.651    0.588 0.767
+     none_cw    rare5       45     0.700    0.648 0.767
+none_cw_sqrt    rare5       45     0.681    0.621 0.770
+         ros    rare5       45     0.683    0.629 0.773
+       smote    rare5       45     0.693    0.642 0.774
+   smote_enn    rare5       45     0.702    0.651 0.782
+   diffusion    rare5       45     0.681    0.627 0.772
+    validaug    rare5       45     0.672    0.617 0.768
+        none    rare1       45     0.592    0.515 0.732
+     none_cw    rare1       45     0.650    0.589 0.743
+none_cw_sqrt    rare1       45     0.617    0.548 0.739
+         ros    rare1       45     0.622    0.557 0.741
+       smote    rare1       45     0.639    0.576 0.748
+   smote_enn    rare1       45     0.629    0.563 0.744
+   diffusion    rare1       45     0.620    0.552 0.737
+    validaug    rare1       45     0.607    0.535 0.735
+2026-11-17 09:36:37,105 INFO validaug | diffusion 50k:
+dataset        cic2017_fixed  nf_bot_v3  nf_cic2018_v3  nf_ton_v3  nf_unsw_v3   mean
+method                                                                              
+none                   0.892      0.703          0.781      0.848       0.514  0.748
+ctgan                  0.891      0.675          0.777      0.846       0.507  0.739
+tvae                   0.905      0.614          0.757      0.824       0.507  0.722
+diffusion_50k          0.894      0.691          0.787      0.847       0.519  0.748
+diffusion              0.896      0.690          0.780      0.847       0.517  0.746
+validaug               0.896      0.695          0.784      0.847       0.534  0.751
+          ref        vs   metric  n_blocks  mean_diff  wins  losses      p  p_holm
+diffusion_50k      none macro_f1        20    -0.0001     8      12 0.4749  0.9498
+diffusion_50k     ctgan macro_f1        20     0.0086    10      10 0.2943  0.8828
+diffusion_50k      tvae macro_f1        20     0.0262    15       5 0.0064  0.0256
+diffusion_50k diffusion macro_f1        20     0.0019    12       8 0.7012  0.9498
+diffusion_50k      none  rare_f1        20     0.0151    12       8 0.2455  0.5306
+diffusion_50k     ctgan  rare_f1        20     0.0235    12       8 0.1769  0.5306
+diffusion_50k      tvae  rare_f1        20     0.0717    15       5 0.0023  0.0093
+diffusion_50k diffusion  rare_f1        20     0.0058    10       9 0.5461  0.5461
+diffusion_50k      none      mcc        20    -0.0089     7      13 0.1650  0.6598
+diffusion_50k     ctgan      mcc        20    -0.0044    11       9 0.7012  1.0000
+diffusion_50k      tvae      mcc        20     0.0029    13       7 0.2305  0.6915
+diffusion_50k diffusion      mcc        20    -0.0005     9      11 0.8124  1.0000
+2026-11-17 09:36:37,203 INFO validaug | no cap: {'cic2017_nocap': {'rows': 2091588, 'largest': 1657693, 'smallest': 151, 'imbalance_ratio': 10978.1, 'n_train_real': 1080003}, 'nf_unsw_v3_nocap': {'rows': 2365424, 'largest': 2237731, 'smallest': 158, 'imbalance_ratio': 14162.9, 'n_train_real': 693190}}
+dataset       cic2017_nocap  nf_unsw_v3_nocap
+method                                       
+none                  0.833             0.512
+none_cw               0.804             0.494
+none_cw_sqrt          0.827             0.514
+ros                   0.854             0.526
+smote                 0.850             0.531
+diffusion             0.843             0.497
+validaug              0.843             0.521
+ ref           vs   metric  n_blocks  mean_diff_method_minus_none  none_wins  none_losses      p  p_holm
+none      none_cw macro_f1        12                      -0.0235         10            2 0.0161  0.0967
+none none_cw_sqrt macro_f1        12                      -0.0023          7            5 0.8501  1.0000
+none          ros macro_f1        12                       0.0172          6            6 0.3013  1.0000
+none        smote macro_f1        12                       0.0176          3            9 0.1294  0.6470
+none    diffusion macro_f1        12                      -0.0026          7            5 0.6772  1.0000
+none     validaug macro_f1        12                       0.0093          6            6 0.5186  1.0000
+none      none_cw  rare_f1        12                      -0.0226          7            5 0.3013  1.0000
+none none_cw_sqrt  rare_f1        12                      -0.0012          5            7 0.9697  1.0000
+none          ros  rare_f1        12                       0.0239          6            6 0.3013  1.0000
+none        smote  rare_f1        12                       0.0250          3            9 0.1294  0.7764
+none    diffusion  rare_f1        12                      -0.0031          7            5 0.7910  1.0000
+none     validaug  rare_f1        12                       0.0135          6            6 0.5186  1.0000
+none      none_cw      mcc        12                      -0.0284         10            2 0.0024  0.0146
+none none_cw_sqrt      mcc        12                      -0.0097         10            2 0.0269  0.1074
+none          ros      mcc        12                       0.0010          2           10 0.0522  0.1567
+none        smote      mcc        12                       0.0005          3            9 0.2661  0.5322
+none    diffusion      mcc        12                      -0.0096         10            2 0.0093  0.0464
+none     validaug      mcc        12                      -0.0018          8            4 0.4697  0.5322
+2026-11-17 09:36:37,348 INFO validaug | TabDDPM / TabSyn:
+dataset    cic2017_fixed  nf_bot_v3  nf_cic2018_v3  nf_ton_v3  nf_unsw_v3   mean
+method                                                                          
+none               0.894      0.704          0.784      0.847       0.506  0.747
+smote              0.902      0.655          0.775      0.851       0.518  0.740
+ctgan              0.888      0.696          0.781      0.844       0.506  0.743
+tvae               0.922      0.587          0.770      0.821       0.513  0.723
+tabddpm            0.903      0.643          0.797      0.842       0.503  0.737
+tabsyn             0.847      0.642          0.761      0.845       0.481  0.715
+diffusion          0.895      0.695          0.783      0.843       0.524  0.748
+validaug           0.892      0.703          0.779      0.852       0.540  0.753
+2026-11-17 09:36:37,353 INFO validaug | written to runs/phaseG_analysis

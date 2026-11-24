@@ -1,0 +1,19 @@
+{
+  "train_conflicts_policy": "majority",
+  "train_conflict_removed": {},
+  "sizes_before_dedup": [
+    380338,
+    126778,
+    126779
+  ],
+  "dedup_removed": {
+    "train_internal": 96273,
+    "val_overlap_train": 32742,
+    "test_overlap_trainval": 33305
+  },
+  "sizes": [
+    284065,
+    94036,
+    93474
+  ]
+}

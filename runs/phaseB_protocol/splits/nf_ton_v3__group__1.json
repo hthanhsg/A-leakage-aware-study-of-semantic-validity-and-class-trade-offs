@@ -1,0 +1,31 @@
+{
+  "group_fallback_classes": [
+    "mitm"
+  ],
+  "train_conflicts_policy": "majority",
+  "train_conflict_removed": {
+    "Benign": 30853,
+    "scanning": 9838,
+    "injection": 5846,
+    "xss": 4935,
+    "dos": 2651,
+    "ddos": 2160,
+    "mitm": 142,
+    "password": 134
+  },
+  "sizes_before_dedup": [
+    921116,
+    402590,
+    229719
+  ],
+  "dedup_removed": {
+    "train_internal": 591648,
+    "val_overlap_train": 164524,
+    "test_overlap_trainval": 149658
+  },
+  "sizes": [
+    329468,
+    238066,
+    80061
+  ]
+}

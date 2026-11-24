@@ -1,0 +1,30 @@
+{
+  "group_fallback_classes": [
+    "DDoS",
+    "DoS GoldenEye",
+    "DoS Hulk",
+    "DoS Slowhttptest",
+    "DoS slowloris",
+    "FTP-Patator",
+    "PortScan",
+    "SSH-Patator",
+    "Web Attack - Brute Force"
+  ],
+  "train_conflicts_policy": "majority",
+  "train_conflict_removed": {},
+  "sizes_before_dedup": [
+    381687,
+    126972,
+    125236
+  ],
+  "dedup_removed": {
+    "train_internal": 95389,
+    "val_overlap_train": 33516,
+    "test_overlap_trainval": 33032
+  },
+  "sizes": [
+    286298,
+    93456,
+    92204
+  ]
+}

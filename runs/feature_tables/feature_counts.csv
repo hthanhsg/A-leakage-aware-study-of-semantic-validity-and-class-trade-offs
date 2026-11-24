@@ -1,0 +1,6 @@
+dataset,n_features,numeric,categorical,binary_flags,constant_dropped
+nf_unsw_v3,57,35,7,15,9
+nf_ton_v3,63,35,7,21,3
+nf_bot_v3,65,35,7,23,1
+nf_cic2018_v3,64,35,6,23,2
+cic2017_fixed,78,76,2,0,0

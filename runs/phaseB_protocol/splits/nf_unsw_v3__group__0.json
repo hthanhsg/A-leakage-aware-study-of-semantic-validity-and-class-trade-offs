@@ -1,0 +1,29 @@
+{
+  "group_fallback_classes": [],
+  "train_conflicts_policy": "majority",
+  "train_conflict_removed": {
+    "Exploits": 1268,
+    "Backdoor": 954,
+    "DoS": 487,
+    "Reconnaissance": 339,
+    "Fuzzers": 280,
+    "Generic": 183,
+    "Shellcode": 27,
+    "Worms": 3
+  },
+  "sizes_before_dedup": [
+    179241,
+    73419,
+    71492
+  ],
+  "dedup_removed": {
+    "train_internal": 61592,
+    "val_overlap_train": 25703,
+    "test_overlap_trainval": 26430
+  },
+  "sizes": [
+    117649,
+    47716,
+    45062
+  ]
+}

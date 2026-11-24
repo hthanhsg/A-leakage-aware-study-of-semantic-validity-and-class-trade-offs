@@ -1,0 +1,25 @@
+{
+  "train_conflicts_policy": "majority",
+  "train_conflict_removed": {
+    "Reconnaissance": 8633,
+    "Benign": 3448,
+    "DDoS": 1592,
+    "Theft": 661,
+    "DoS": 171
+  },
+  "sizes_before_dedup": [
+    377657,
+    130721,
+    130721
+  ],
+  "dedup_removed": {
+    "train_internal": 206242,
+    "val_overlap_train": 85088,
+    "test_overlap_trainval": 96703
+  },
+  "sizes": [
+    171415,
+    45633,
+    34018
+  ]
+}

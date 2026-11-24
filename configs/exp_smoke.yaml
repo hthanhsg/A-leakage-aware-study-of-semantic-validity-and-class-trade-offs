@@ -1,0 +1,45 @@
+# Smoke test on toy data (CPU, a few minutes). NOT for paper results.
+name: smoke
+data_dir: data/processed
+out_dir: runs/smoke
+device: auto
+train_conflicts: majority
+seeds: [0]
+datasets: [toy_nf, toy_cic]
+splits: [random, temporal_stratified]
+scenarios:
+  - {name: full, type: full}
+  - {name: rare10, type: rare, frac: 0.10, splits: [temporal_stratified]}
+  - {name: holdout_backdoor, type: holdout, cls: Backdoor, datasets: [toy_nf], splits: [temporal_stratified]}
+methods: [none, smote, smote_enn, ctgan, diffusion, validaug, va_no_filter]
+classifiers: [xgboost, mlp]
+cross_dataset:
+  - {train: toy_nf, test: toy_nf_b, labels: binary}
+classifier_params:
+  xgboost: {n_estimators: 100}
+  mlp: {epochs: 5}
+  cnn1d: {epochs: 3}
+  lstm: {epochs: 2}
+  ft_transformer: {epochs: 2}
+aug:
+  budget: {alpha: 0.5, beta: 10}
+  diffusion: {steps: 1500, hidden: 256, depth: 3, batch_size: 512, sample_steps: 60, log_every: 500}
+  boundary: {epochs: 5}
+  validaug: {lambda_c: 1.0, lambda_b: 0.2, delta: 1.0, t1: 0.2, t2: 0.7, inner_steps: 3,
+             budget_trials: 8, pool_cap: 3000, oversample: 1.5,
+             budget_proxies: [xgboost, mlp], budget_min_gain: 0.002}
+  filter: {rho: 0.3, dcr_q: 5.0, margin_hi_q: 90.0, min_keep_frac: 0.1}
+  gan: {epochs: 20, batch_size: 500, max_rows: 5000}
+  external:                      # official TabSyn / TabDDPM (scripts/external/setup_external.sh)
+    python: null                 # e.g. ~/anaconda3/envs/tabsyn_ext/bin/python ; null -> methods skipped
+    tabsyn_root: null            # e.g. external/tabsyn
+    max_rows: 50000              # class-capped training subsample (same as CTGAN/TVAE)
+    tabsyn_vae_epochs: 4000      # official defaults (early stopping inside the official code)
+    tabsyn_epochs: 10000
+    tabddpm_steps: 30000         # = our diffusion's training steps (official configs use up to 100k)
+    tabddpm_ddim: false          # true -> DDIM sampling (faster, non-default)
+    tabddpm_y_cond: true         # official class-conditional TabDDPM (false = unconditional + rejection)
+    max_rounds: 20               # rejection-sampling rounds to meet class quotas
+eval: {fidelity: true, privacy: true}
+save_synthetic: 10000           # synthetic flows saved per cell & method (0 = off)
+cache_root: runs/cache          # diffusion models shared by phases C/D/E/F and sensitivity runs

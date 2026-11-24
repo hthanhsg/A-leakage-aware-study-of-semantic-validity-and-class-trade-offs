@@ -1,0 +1,82 @@
+# Dataset declarations. Edit `paths` to match the file locations on the server.
+# family: netflow (NF-*-v2/v3) | cicflowmeter (CIC-IDS2017/2018, Engelen release)
+# max_per_class: per-class cap at preparation time (very large datasets), null = keep all.
+# conflicts: keep (default: report only; conflicts are resolved on TRAIN after splitting,
+#            see train_conflicts in the phase files) | majority | drop (global, not recommended)
+# overrides.extra_drop: extra columns to drop. In NF-v3 the two *_SECOND_BYTES columns are bytes/duration,
+#   hence inf/NaN for zero-duration flows; the information is already in IN/OUT_BYTES and FLOW_DURATION.
+# attempted: policy for "Attempted" labels of the corrected CIC release: drop | benign | keep
+# label_map: {old_label: new_label} ; drop_classes: [classes to drop] (applied at preparation time)
+# label_groups: shared label taxonomy (multi-class cross-dataset; default is binary).
+
+common:
+  min_class_count: 50
+  seed: 0
+
+datasets:
+  # ---------------- real data (NF-v3: UQ NIDS datasets) ----------------
+  nf_unsw_v3:
+    family: netflow
+    overrides: {extra_drop: [src_to_dst_second_bytes, dst_to_src_second_bytes]}
+    paths: ["data/raw/NF-UNSW-NB15-v3/*.csv"]
+    max_per_class: 200000
+  nf_ton_v3:
+    family: netflow
+    overrides: {extra_drop: [src_to_dst_second_bytes, dst_to_src_second_bytes]}
+    paths: ["data/raw/NF-ToN-IoT-v3/*.csv"]
+    max_per_class: 200000
+  nf_bot_v3:
+    family: netflow
+    overrides: {extra_drop: [src_to_dst_second_bytes, dst_to_src_second_bytes]}
+    paths: ["data/raw/NF-BoT-IoT-v3/*.csv"]
+    max_per_class: 200000
+  nf_cic2018_v3:
+    family: netflow
+    overrides: {extra_drop: [src_to_dst_second_bytes, dst_to_src_second_bytes]}
+    # FTP-BruteForce and DoS-SlowHTTPTest of CSE-CIC-IDS2018 were collected erroneously (traffic contains only
+    # SYN and RST packets; Liu and Patras, 2022). Excluded from experiments (classes_dropped_config in audit.json).
+    drop_classes: [FTP-BruteForce, DoS_attacks-SlowHTTPTest]
+    paths: ["data/raw/NF-CSE-CIC-IDS2018-v3/*.csv"]
+    max_per_class: 200000
+  cic2017_fixed:          # Engelen et al. CSV release (has Timestamp/Src IP); the parquet release has neither
+    family: cicflowmeter
+    paths: ["data/raw/CSE-CIC-IDS-2017-improved/*.csv"]
+    attempted: drop
+    max_per_class: 200000
+
+  # ---------------- sensitivity: natural class imbalance (no per-class cap), phase G3 ----------------
+  nf_unsw_v3_nocap:
+    family: netflow
+    overrides: {extra_drop: [src_to_dst_second_bytes, dst_to_src_second_bytes]}
+    paths: ["data/raw/NF-UNSW-NB15-v3/*.csv"]
+    max_per_class: null
+  cic2017_nocap:
+    family: cicflowmeter
+    paths: ["data/raw/CSE-CIC-IDS-2017-improved/*.csv"]
+    attempted: drop
+    max_per_class: null
+
+  # ---------------- toy data for smoke tests ----------------
+  toy_nf:
+    family: netflow
+    paths: ["data/raw/toy_nf/toy_nf_v3.csv"]
+  toy_nf_b:
+    family: netflow
+    paths: ["data/raw/toy_nf/toy_nf_v3_b.csv"]
+  toy_cic:
+    family: cicflowmeter
+    paths: ["data/raw/toy_cic/*.csv"]
+    attempted: drop
+
+# Mapping of labels to a shared taxonomy (multi-class cross-dataset). Case-insensitive
+# substring matching (longest keyword wins).
+label_groups:
+  Benign: [benign, normal]
+  DoS: [dos]
+  DDoS: [ddos]
+  Recon: [scan, recon, portscan, reconnaissance]
+  BruteForce: [brute, patator, password, ssh, ftp]
+  Web: [injection, xss, web, sql]
+  Botnet: [bot]
+  Backdoor: [backdoor, infiltration, mitm, ransomware]
+  Exploit: [exploit, shellcode, worm, fuzzer, generic, analysis]

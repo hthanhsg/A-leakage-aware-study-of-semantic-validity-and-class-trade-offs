@@ -1,0 +1,28 @@
+{
+  "train_conflicts_policy": "majority",
+  "train_conflict_removed": {
+    "Exploits": 1340,
+    "Backdoor": 701,
+    "Reconnaissance": 572,
+    "DoS": 352,
+    "Fuzzers": 330,
+    "Generic": 183,
+    "Shellcode": 50,
+    "Worms": 8
+  },
+  "sizes_before_dedup": [
+    193079,
+    65539,
+    65539
+  ],
+  "dedup_removed": {
+    "train_internal": 64863,
+    "val_overlap_train": 23733,
+    "test_overlap_trainval": 25317
+  },
+  "sizes": [
+    128216,
+    41806,
+    40222
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "naive_overlap": {
+    "test_rows_identical_to_a_train_row": 218592,
+    "test_rows": 321997
+  },
+  "sizes": [
+    965990,
+    321997,
+    321997
+  ]
+}

@@ -1,0 +1,70 @@
+# ---------------------------------------------------------------------------
+# Data: the datasets are third-party and are not redistributed (see data/README.md).
+# Only the audits (audit.json) and data/README.md are versioned.
+# ---------------------------------------------------------------------------
+data/raw/
+data/**/*.parquet
+data/**/*.csv
+data/**/*.zip
+!data/README.md
+
+# ---------------------------------------------------------------------------
+# Experiment outputs that are large, re-creatable or derived from the datasets.
+# Versioned: runs/*/results.jsonl, runs/*/splits/ (partition indices and counts),
+# runs/mechanism/, runs/phaseG_analysis/, runs/feature_tables/, tuning files.
+# ---------------------------------------------------------------------------
+# The partition indices (runs/*/splits/*.npz, about 720 MB in total, no file above 100 MB)
+# are versioned because the article states that they are released. To keep the
+# repository small, deposit them on Zenodo instead and uncomment the next line:
+# runs/*/splits/*.npz
+runs/cache/
+runs/*/synthetic/
+runs/*/constraints/*.parquet
+runs/phaseE_sens/
+runs/*_gpu1/
+runs/x/
+artifact/
+*.tar.gz
+*.pt
+*.pth
+*.ckpt
+
+# Official TabSyn/TabDDPM code is cloned separately (see README, Section 5)
+external/
+
+# Toy data written by scripts/make_toy_data.py
+data/raw/toy_nf/
+data/raw/toy_cic/
+
+# ---------------------------------------------------------------------------
+# Python
+# ---------------------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*.egg-info/
+.ipynb_checkpoints/
+.pytest_cache/
+.venv/
+venv/
+env/
+
+# ---------------------------------------------------------------------------
+# LaTeX build files (Figure_1.tex)
+# ---------------------------------------------------------------------------
+*.aux
+*.fdb_latexmk
+*.fls
+*.synctex.gz
+*.out
+*.toc
+
+# ---------------------------------------------------------------------------
+# OS and editors
+# ---------------------------------------------------------------------------
+.DS_Store
+._*
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*~

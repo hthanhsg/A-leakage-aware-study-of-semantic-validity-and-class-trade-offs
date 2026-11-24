@@ -1,0 +1,467 @@
+dataset,class,other,share
+nf_unsw_v3,Analysis,Backdoor,0.010326909181422745
+nf_unsw_v3,Analysis,Benign,0.0
+nf_unsw_v3,Analysis,DoS,0.0512196204498579
+nf_unsw_v3,Analysis,Exploits,0.027637908473138868
+nf_unsw_v3,Analysis,Fuzzers,0.013023456196072444
+nf_unsw_v3,Analysis,Generic,0.017267917080070614
+nf_unsw_v3,Analysis,Reconnaissance,0.030102163739387896
+nf_unsw_v3,Analysis,Shellcode,0.0
+nf_unsw_v3,Analysis,Worms,0.0
+nf_unsw_v3,Backdoor,Analysis,0.0290802612378587
+nf_unsw_v3,Backdoor,Benign,0.0004098966808726164
+nf_unsw_v3,Backdoor,DoS,0.0711410796898766
+nf_unsw_v3,Backdoor,Exploits,0.14016527015342245
+nf_unsw_v3,Backdoor,Fuzzers,0.12960480459345194
+nf_unsw_v3,Backdoor,Generic,0.05256719643750352
+nf_unsw_v3,Backdoor,Reconnaissance,0.08121515451658194
+nf_unsw_v3,Backdoor,Shellcode,0.07840204772379253
+nf_unsw_v3,Backdoor,Worms,0.07143208774872403
+nf_unsw_v3,Benign,Analysis,4.5285966386216646e-05
+nf_unsw_v3,Benign,Backdoor,0.0004833056084167402
+nf_unsw_v3,Benign,DoS,0.000749939490835173
+nf_unsw_v3,Benign,Exploits,0.0010665849229534517
+nf_unsw_v3,Benign,Fuzzers,1.666523563012773e-05
+nf_unsw_v3,Benign,Generic,0.0011498953597021747
+nf_unsw_v3,Benign,Reconnaissance,9.998701926360589e-05
+nf_unsw_v3,Benign,Shellcode,0.00011724986456174217
+nf_unsw_v3,Benign,Worms,0.0
+nf_unsw_v3,DoS,Analysis,0.13056442736258353
+nf_unsw_v3,DoS,Backdoor,0.06521940356980882
+nf_unsw_v3,DoS,Benign,0.002041282982329843
+nf_unsw_v3,DoS,Exploits,0.14080551959320844
+nf_unsw_v3,DoS,Fuzzers,0.07789145894136879
+nf_unsw_v3,DoS,Generic,0.10265638852277419
+nf_unsw_v3,DoS,Reconnaissance,0.05393823644017116
+nf_unsw_v3,DoS,Shellcode,0.040103647159273316
+nf_unsw_v3,DoS,Worms,0.07613958926865634
+nf_unsw_v3,Exploits,Analysis,0.06150332361386227
+nf_unsw_v3,Exploits,Backdoor,0.11751190414840589
+nf_unsw_v3,Exploits,Benign,0.0014818351894956485
+nf_unsw_v3,Exploits,DoS,0.13094451691165557
+nf_unsw_v3,Exploits,Fuzzers,0.05646994517561912
+nf_unsw_v3,Exploits,Generic,0.06572143025319947
+nf_unsw_v3,Exploits,Reconnaissance,0.05365028528569165
+nf_unsw_v3,Exploits,Shellcode,0.04065161915614398
+nf_unsw_v3,Exploits,Worms,0.15788461496552733
+nf_unsw_v3,Fuzzers,Analysis,0.02573729638250984
+nf_unsw_v3,Fuzzers,Backdoor,0.14283288315093248
+nf_unsw_v3,Fuzzers,Benign,0.0
+nf_unsw_v3,Fuzzers,DoS,0.08020431072154706
+nf_unsw_v3,Fuzzers,Exploits,0.06359130111868695
+nf_unsw_v3,Fuzzers,Generic,0.041247128637174967
+nf_unsw_v3,Fuzzers,Reconnaissance,0.10593185263297004
+nf_unsw_v3,Fuzzers,Shellcode,0.06839278659028636
+nf_unsw_v3,Fuzzers,Worms,0.005616307748584982
+nf_unsw_v3,Generic,Analysis,0.034829320495531994
+nf_unsw_v3,Generic,Backdoor,0.05451223091926963
+nf_unsw_v3,Generic,Benign,0.0009453934103515657
+nf_unsw_v3,Generic,DoS,0.11294200741327161
+nf_unsw_v3,Generic,Exploits,0.07772357482319563
+nf_unsw_v3,Generic,Fuzzers,0.07159156605771254
+nf_unsw_v3,Generic,Reconnaissance,0.03851847519007642
+nf_unsw_v3,Generic,Shellcode,0.07719240955493512
+nf_unsw_v3,Generic,Worms,0.04710817253900144
+nf_unsw_v3,Reconnaissance,Analysis,0.06008797423589218
+nf_unsw_v3,Reconnaissance,Backdoor,0.08140285594091012
+nf_unsw_v3,Reconnaissance,Benign,5.8055413399735965e-05
+nf_unsw_v3,Reconnaissance,DoS,0.056268513567592965
+nf_unsw_v3,Reconnaissance,Exploits,0.05272111738031485
+nf_unsw_v3,Reconnaissance,Fuzzers,0.0960042221129791
+nf_unsw_v3,Reconnaissance,Generic,0.033708255949044995
+nf_unsw_v3,Reconnaissance,Shellcode,0.05572912853196032
+nf_unsw_v3,Reconnaissance,Worms,0.06849122935301576
+nf_unsw_v3,Shellcode,Analysis,0.0
+nf_unsw_v3,Shellcode,Backdoor,0.04749613139640408
+nf_unsw_v3,Shellcode,Benign,0.0
+nf_unsw_v3,Shellcode,DoS,0.027079978097248086
+nf_unsw_v3,Shellcode,Exploits,0.030297298948884093
+nf_unsw_v3,Shellcode,Fuzzers,0.04050343321067406
+nf_unsw_v3,Shellcode,Generic,0.04882677170849962
+nf_unsw_v3,Shellcode,Reconnaissance,0.04282838048369957
+nf_unsw_v3,Shellcode,Worms,0.013894290120570425
+nf_unsw_v3,Worms,Analysis,0.0016425994147870038
+nf_unsw_v3,Worms,Backdoor,0.00921982102484688
+nf_unsw_v3,Worms,Benign,0.0
+nf_unsw_v3,Worms,DoS,0.01016726027762577
+nf_unsw_v3,Worms,Exploits,0.020161706865785806
+nf_unsw_v3,Worms,Fuzzers,0.0007806483237136129
+nf_unsw_v3,Worms,Generic,0.003551278731675664
+nf_unsw_v3,Worms,Reconnaissance,0.010305246197550003
+nf_unsw_v3,Worms,Shellcode,0.001857560437123298
+nf_ton_v3,Backdoor,Benign,0.002681138335742666
+nf_ton_v3,Backdoor,ddos,0.0001498830018965468
+nf_ton_v3,Backdoor,dos,0.0002831075418461308
+nf_ton_v3,Backdoor,injection,0.0001332218085699551
+nf_ton_v3,Backdoor,mitm,0.00036636816781377546
+nf_ton_v3,Backdoor,password,8.326226477391956e-05
+nf_ton_v3,Backdoor,ransomware,0.00573845339707268
+nf_ton_v3,Backdoor,scanning,0.001482119114465123
+nf_ton_v3,Backdoor,xss,0.0003996785365901133
+nf_ton_v3,Benign,Backdoor,0.0018644178700800947
+nf_ton_v3,Benign,ddos,0.010570743031591839
+nf_ton_v3,Benign,dos,0.01246833111327677
+nf_ton_v3,Benign,injection,0.006991589803000273
+nf_ton_v3,Benign,mitm,0.017179385544392623
+nf_ton_v3,Benign,password,0.00173126703866868
+nf_ton_v3,Benign,ransomware,0.008488063547729123
+nf_ton_v3,Benign,scanning,0.15384895087605613
+nf_ton_v3,Benign,xss,0.009788234211654999
+nf_ton_v3,ddos,Backdoor,0.0010831870004330431
+nf_ton_v3,ddos,Benign,0.005632422933418539
+nf_ton_v3,ddos,dos,0.00601580179699351
+nf_ton_v3,ddos,injection,0.012381261855214204
+nf_ton_v3,ddos,mitm,0.00721556001555053
+nf_ton_v3,ddos,password,0.0016997069273705836
+nf_ton_v3,ddos,ransomware,0.0011057089956295382
+nf_ton_v3,ddos,scanning,0.005115836130274422
+nf_ton_v3,ddos,xss,0.009815076711697804
+nf_ton_v3,dos,Backdoor,0.0001166536733679569
+nf_ton_v3,dos,Benign,0.005782552250659071
+nf_ton_v3,dos,ddos,0.0028996140398682767
+nf_ton_v3,dos,injection,0.005432607367079668
+nf_ton_v3,dos,mitm,0.04556051976152404
+nf_ton_v3,dos,password,3.3328136239215395e-05
+nf_ton_v3,dos,ransomware,0.0009505874899011817
+nf_ton_v3,dos,scanning,0.0014498029173220155
+nf_ton_v3,dos,xss,0.05169303111764643
+nf_ton_v3,injection,Backdoor,1.666666666666671e-05
+nf_ton_v3,injection,Benign,0.0028333033776185286
+nf_ton_v3,injection,ddos,0.00999985309404309
+nf_ton_v3,injection,dos,0.006999916424932328
+nf_ton_v3,injection,mitm,0.006799917382435447
+nf_ton_v3,injection,password,0.008249880861135078
+nf_ton_v3,injection,ransomware,9.700995942040005e-05
+nf_ton_v3,injection,scanning,0.002233305429385905
+nf_ton_v3,injection,xss,0.019083092730111762
+nf_ton_v3,mitm,Backdoor,0.00029998276591377816
+nf_ton_v3,mitm,Benign,0.00971605130338212
+nf_ton_v3,mitm,ddos,0.00939939544260362
+nf_ton_v3,mitm,dos,0.04569712356219132
+nf_ton_v3,mitm,injection,0.00826614964630258
+nf_ton_v3,mitm,password,0.0014999067174641023
+nf_ton_v3,mitm,ransomware,0.0004462255598935312
+nf_ton_v3,mitm,scanning,0.0033331237896819595
+nf_ton_v3,mitm,xss,0.008449467250386986
+nf_ton_v3,password,Backdoor,0.0001833333333333238
+nf_ton_v3,password,Benign,0.0014833333333332576
+nf_ton_v3,password,ddos,0.0033666666666664954
+nf_ton_v3,password,dos,4.999999999999742e-05
+nf_ton_v3,password,injection,0.007749999999999605
+nf_ton_v3,password,mitm,0.0013999999999999284
+nf_ton_v3,password,ransomware,0.0
+nf_ton_v3,password,scanning,0.0009499999999999514
+nf_ton_v3,password,xss,0.0023499999999998804
+nf_ton_v3,ransomware,Backdoor,0.001237061084142523
+nf_ton_v3,ransomware,Benign,0.010030050629952663
+nf_ton_v3,ransomware,ddos,0.0026077933790016055
+nf_ton_v3,ransomware,dos,0.0005850821935662417
+nf_ton_v3,ransomware,injection,0.00026745772424981656
+nf_ton_v3,ransomware,mitm,0.0003176228177222854
+nf_ton_v3,ransomware,password,0.0008692717977747459
+nf_ton_v3,ransomware,scanning,0.001939122511592834
+nf_ton_v3,ransomware,xss,0.0004179340148008988
+nf_ton_v3,scanning,Backdoor,0.0019162972870131322
+nf_ton_v3,scanning,Benign,0.16160335176381327
+nf_ton_v3,scanning,ddos,0.006448802273112303
+nf_ton_v3,scanning,dos,0.003482701920917028
+nf_ton_v3,scanning,injection,0.004815824637812288
+nf_ton_v3,scanning,mitm,0.004899049404850444
+nf_ton_v3,scanning,password,0.0009665055612600469
+nf_ton_v3,scanning,ransomware,0.001319082449979599
+nf_ton_v3,scanning,xss,0.002916050313161896
+nf_ton_v3,xss,Backdoor,0.0001999958965056678
+nf_ton_v3,xss,Benign,0.0038332663092199137
+nf_ton_v3,xss,ddos,0.009383151411163092
+nf_ton_v3,xss,dos,0.0517489929993333
+nf_ton_v3,xss,injection,0.02549947789767053
+nf_ton_v3,xss,mitm,0.006333220623486252
+nf_ton_v3,xss,password,0.0020499690867597296
+nf_ton_v3,xss,ransomware,0.00013581349734857935
+nf_ton_v3,xss,scanning,0.001166647106563423
+nf_bot_v3,Benign,DDoS,9.901934525415053e-05
+nf_bot_v3,Benign,DoS,0.0009075400878082574
+nf_bot_v3,Benign,Reconnaissance,0.07466397709284804
+nf_bot_v3,Benign,Theft,0.011980874544026463
+nf_bot_v3,DDoS,Benign,0.0001166666666666657
+nf_bot_v3,DDoS,DoS,0.05364999999999934
+nf_bot_v3,DDoS,Reconnaissance,0.0008833333333333297
+nf_bot_v3,DDoS,Theft,0.0
+nf_bot_v3,DoS,Benign,0.00016666666666666574
+nf_bot_v3,DoS,DDoS,0.05491666666666593
+nf_bot_v3,DoS,Reconnaissance,0.0006999999999999963
+nf_bot_v3,DoS,Theft,0.0
+nf_bot_v3,Reconnaissance,Benign,0.07961411420305603
+nf_bot_v3,Reconnaissance,DDoS,0.0005561377274255985
+nf_bot_v3,Reconnaissance,DoS,0.0005556524061812988
+nf_bot_v3,Reconnaissance,Theft,0.022292282060219822
+nf_bot_v3,Theft,Benign,0.003481843191229432
+nf_bot_v3,Theft,DDoS,0.0007658029653683226
+nf_bot_v3,Theft,DoS,0.001636513557013267
+nf_bot_v3,Theft,Reconnaissance,0.0030984781208946628
+nf_cic2018_v3,Benign,Bot,0.0006930115210555414
+nf_cic2018_v3,Benign,Brute_Force_-Web,0.031726381322491726
+nf_cic2018_v3,Benign,Brute_Force_-XSS,0.1433908533467291
+nf_cic2018_v3,Benign,DDOS_attack-HOIC,0.0009910875815481147
+nf_cic2018_v3,Benign,DDOS_attack-LOIC-UDP,0.0
+nf_cic2018_v3,Benign,DDoS_attacks-LOIC-HTTP,0.00012336624968448852
+nf_cic2018_v3,Benign,DoS_attacks-GoldenEye,0.0012520020319621951
+nf_cic2018_v3,Benign,DoS_attacks-Hulk,0.0009668812635301145
+nf_cic2018_v3,Benign,DoS_attacks-Slowloris,0.001789876032005651
+nf_cic2018_v3,Benign,Infilteration,0.2586299320363476
+nf_cic2018_v3,Benign,SQL_Injection,0.01149738942213039
+nf_cic2018_v3,Benign,SSH-Bruteforce,5.4096985566477556e-05
+nf_cic2018_v3,Bot,Benign,0.00029796138394068986
+nf_cic2018_v3,Bot,Brute_Force_-Web,0.0040415202082296
+nf_cic2018_v3,Bot,Brute_Force_-XSS,0.0
+nf_cic2018_v3,Bot,DDOS_attack-HOIC,0.0
+nf_cic2018_v3,Bot,DDOS_attack-LOIC-UDP,0.0
+nf_cic2018_v3,Bot,DDoS_attacks-LOIC-HTTP,0.0
+nf_cic2018_v3,Bot,DoS_attacks-GoldenEye,0.0
+nf_cic2018_v3,Bot,DoS_attacks-Hulk,0.0
+nf_cic2018_v3,Bot,DoS_attacks-Slowloris,0.0
+nf_cic2018_v3,Bot,Infilteration,0.0
+nf_cic2018_v3,Bot,SQL_Injection,0.008748636144339038
+nf_cic2018_v3,Bot,SSH-Bruteforce,0.0
+nf_cic2018_v3,Brute_Force_-Web,Benign,0.002717432838822613
+nf_cic2018_v3,Brute_Force_-Web,Bot,0.0
+nf_cic2018_v3,Brute_Force_-Web,Brute_Force_-XSS,0.24743836860271382
+nf_cic2018_v3,Brute_Force_-Web,DDOS_attack-HOIC,0.0
+nf_cic2018_v3,Brute_Force_-Web,DDOS_attack-LOIC-UDP,0.0
+nf_cic2018_v3,Brute_Force_-Web,DDoS_attacks-LOIC-HTTP,0.0
+nf_cic2018_v3,Brute_Force_-Web,DoS_attacks-GoldenEye,0.0006721602451020946
+nf_cic2018_v3,Brute_Force_-Web,DoS_attacks-Hulk,0.001408277460051295
+nf_cic2018_v3,Brute_Force_-Web,DoS_attacks-Slowloris,0.0
+nf_cic2018_v3,Brute_Force_-Web,Infilteration,0.005924898205307318
+nf_cic2018_v3,Brute_Force_-Web,SQL_Injection,0.27677717939571395
+nf_cic2018_v3,Brute_Force_-Web,SSH-Bruteforce,0.0021729402879625557
+nf_cic2018_v3,Brute_Force_-XSS,Benign,0.0
+nf_cic2018_v3,Brute_Force_-XSS,Bot,0.0
+nf_cic2018_v3,Brute_Force_-XSS,Brute_Force_-Web,0.018219321748820995
+nf_cic2018_v3,Brute_Force_-XSS,DDOS_attack-HOIC,0.0
+nf_cic2018_v3,Brute_Force_-XSS,DDOS_attack-LOIC-UDP,0.0
+nf_cic2018_v3,Brute_Force_-XSS,DDoS_attacks-LOIC-HTTP,0.0
+nf_cic2018_v3,Brute_Force_-XSS,DoS_attacks-GoldenEye,0.0
+nf_cic2018_v3,Brute_Force_-XSS,DoS_attacks-Hulk,0.0
+nf_cic2018_v3,Brute_Force_-XSS,DoS_attacks-Slowloris,0.0
+nf_cic2018_v3,Brute_Force_-XSS,Infilteration,0.0
+nf_cic2018_v3,Brute_Force_-XSS,SQL_Injection,0.1247018664487569
+nf_cic2018_v3,Brute_Force_-XSS,SSH-Bruteforce,0.0
+nf_cic2018_v3,DDOS_attack-HOIC,Benign,0.0
+nf_cic2018_v3,DDOS_attack-HOIC,Bot,0.0
+nf_cic2018_v3,DDOS_attack-HOIC,Brute_Force_-Web,0.0
+nf_cic2018_v3,DDOS_attack-HOIC,Brute_Force_-XSS,0.0
+nf_cic2018_v3,DDOS_attack-HOIC,DDOS_attack-LOIC-UDP,0.0
+nf_cic2018_v3,DDOS_attack-HOIC,DDoS_attacks-LOIC-HTTP,0.0
+nf_cic2018_v3,DDOS_attack-HOIC,DoS_attacks-GoldenEye,0.0
+nf_cic2018_v3,DDOS_attack-HOIC,DoS_attacks-Hulk,0.0
+nf_cic2018_v3,DDOS_attack-HOIC,DoS_attacks-Slowloris,0.0
+nf_cic2018_v3,DDOS_attack-HOIC,Infilteration,0.0
+nf_cic2018_v3,DDOS_attack-HOIC,SQL_Injection,0.0
+nf_cic2018_v3,DDOS_attack-HOIC,SSH-Bruteforce,0.0
+nf_cic2018_v3,DDOS_attack-LOIC-UDP,Benign,0.0
+nf_cic2018_v3,DDOS_attack-LOIC-UDP,Bot,0.0
+nf_cic2018_v3,DDOS_attack-LOIC-UDP,Brute_Force_-Web,0.0
+nf_cic2018_v3,DDOS_attack-LOIC-UDP,Brute_Force_-XSS,0.0
+nf_cic2018_v3,DDOS_attack-LOIC-UDP,DDOS_attack-HOIC,0.0
+nf_cic2018_v3,DDOS_attack-LOIC-UDP,DDoS_attacks-LOIC-HTTP,0.0
+nf_cic2018_v3,DDOS_attack-LOIC-UDP,DoS_attacks-GoldenEye,0.0
+nf_cic2018_v3,DDOS_attack-LOIC-UDP,DoS_attacks-Hulk,0.0
+nf_cic2018_v3,DDOS_attack-LOIC-UDP,DoS_attacks-Slowloris,0.0
+nf_cic2018_v3,DDOS_attack-LOIC-UDP,Infilteration,0.0
+nf_cic2018_v3,DDOS_attack-LOIC-UDP,SQL_Injection,0.0
+nf_cic2018_v3,DDOS_attack-LOIC-UDP,SSH-Bruteforce,0.0
+nf_cic2018_v3,DDoS_attacks-LOIC-HTTP,Benign,0.0
+nf_cic2018_v3,DDoS_attacks-LOIC-HTTP,Bot,0.0
+nf_cic2018_v3,DDoS_attacks-LOIC-HTTP,Brute_Force_-Web,0.0
+nf_cic2018_v3,DDoS_attacks-LOIC-HTTP,Brute_Force_-XSS,0.0
+nf_cic2018_v3,DDoS_attacks-LOIC-HTTP,DDOS_attack-HOIC,0.0
+nf_cic2018_v3,DDoS_attacks-LOIC-HTTP,DDOS_attack-LOIC-UDP,0.0
+nf_cic2018_v3,DDoS_attacks-LOIC-HTTP,DoS_attacks-GoldenEye,0.0
+nf_cic2018_v3,DDoS_attacks-LOIC-HTTP,DoS_attacks-Hulk,0.0
+nf_cic2018_v3,DDoS_attacks-LOIC-HTTP,DoS_attacks-Slowloris,0.0
+nf_cic2018_v3,DDoS_attacks-LOIC-HTTP,Infilteration,0.0
+nf_cic2018_v3,DDoS_attacks-LOIC-HTTP,SQL_Injection,0.0
+nf_cic2018_v3,DDoS_attacks-LOIC-HTTP,SSH-Bruteforce,0.0
+nf_cic2018_v3,DoS_attacks-GoldenEye,Benign,0.00016642555108651553
+nf_cic2018_v3,DoS_attacks-GoldenEye,Bot,0.0
+nf_cic2018_v3,DoS_attacks-GoldenEye,Brute_Force_-Web,0.0
+nf_cic2018_v3,DoS_attacks-GoldenEye,Brute_Force_-XSS,0.0
+nf_cic2018_v3,DoS_attacks-GoldenEye,DDOS_attack-HOIC,0.0
+nf_cic2018_v3,DoS_attacks-GoldenEye,DDOS_attack-LOIC-UDP,0.0
+nf_cic2018_v3,DoS_attacks-GoldenEye,DDoS_attacks-LOIC-HTTP,0.0
+nf_cic2018_v3,DoS_attacks-GoldenEye,DoS_attacks-Hulk,0.00033294978389673287
+nf_cic2018_v3,DoS_attacks-GoldenEye,DoS_attacks-Slowloris,0.003590754750660778
+nf_cic2018_v3,DoS_attacks-GoldenEye,Infilteration,0.0
+nf_cic2018_v3,DoS_attacks-GoldenEye,SQL_Injection,0.0
+nf_cic2018_v3,DoS_attacks-GoldenEye,SSH-Bruteforce,0.0
+nf_cic2018_v3,DoS_attacks-Hulk,Benign,0.0
+nf_cic2018_v3,DoS_attacks-Hulk,Bot,0.0
+nf_cic2018_v3,DoS_attacks-Hulk,Brute_Force_-Web,0.0
+nf_cic2018_v3,DoS_attacks-Hulk,Brute_Force_-XSS,0.0
+nf_cic2018_v3,DoS_attacks-Hulk,DDOS_attack-HOIC,0.0
+nf_cic2018_v3,DoS_attacks-Hulk,DDOS_attack-LOIC-UDP,0.0
+nf_cic2018_v3,DoS_attacks-Hulk,DDoS_attacks-LOIC-HTTP,0.0
+nf_cic2018_v3,DoS_attacks-Hulk,DoS_attacks-GoldenEye,6.666666666666182e-05
+nf_cic2018_v3,DoS_attacks-Hulk,DoS_attacks-Slowloris,0.0
+nf_cic2018_v3,DoS_attacks-Hulk,Infilteration,0.0
+nf_cic2018_v3,DoS_attacks-Hulk,SQL_Injection,0.0
+nf_cic2018_v3,DoS_attacks-Hulk,SSH-Bruteforce,0.0
+nf_cic2018_v3,DoS_attacks-Slowloris,Benign,0.0
+nf_cic2018_v3,DoS_attacks-Slowloris,Bot,0.0
+nf_cic2018_v3,DoS_attacks-Slowloris,Brute_Force_-Web,0.0
+nf_cic2018_v3,DoS_attacks-Slowloris,Brute_Force_-XSS,0.0
+nf_cic2018_v3,DoS_attacks-Slowloris,DDOS_attack-HOIC,0.0
+nf_cic2018_v3,DoS_attacks-Slowloris,DDOS_attack-LOIC-UDP,0.0
+nf_cic2018_v3,DoS_attacks-Slowloris,DDoS_attacks-LOIC-HTTP,0.0
+nf_cic2018_v3,DoS_attacks-Slowloris,DoS_attacks-GoldenEye,0.0014176093990601636
+nf_cic2018_v3,DoS_attacks-Slowloris,DoS_attacks-Hulk,0.0
+nf_cic2018_v3,DoS_attacks-Slowloris,Infilteration,0.0
+nf_cic2018_v3,DoS_attacks-Slowloris,SQL_Injection,0.0
+nf_cic2018_v3,DoS_attacks-Slowloris,SSH-Bruteforce,0.0
+nf_cic2018_v3,Infilteration,Benign,0.287894922089633
+nf_cic2018_v3,Infilteration,Bot,0.0024036484932134865
+nf_cic2018_v3,Infilteration,Brute_Force_-Web,0.04259219098685351
+nf_cic2018_v3,Infilteration,Brute_Force_-XSS,0.003940144276778578
+nf_cic2018_v3,Infilteration,DDOS_attack-HOIC,0.0
+nf_cic2018_v3,Infilteration,DDOS_attack-LOIC-UDP,0.0
+nf_cic2018_v3,Infilteration,DDoS_attacks-LOIC-HTTP,0.0002843674357357436
+nf_cic2018_v3,Infilteration,DoS_attacks-GoldenEye,3.1521154214228625e-05
+nf_cic2018_v3,Infilteration,DoS_attacks-Hulk,0.00017519130572737828
+nf_cic2018_v3,Infilteration,DoS_attacks-Slowloris,0.0005630648910023565
+nf_cic2018_v3,Infilteration,SQL_Injection,0.009145737184072068
+nf_cic2018_v3,Infilteration,SSH-Bruteforce,1.6125568616938476e-05
+nf_cic2018_v3,SQL_Injection,Benign,0.0005992611929475992
+nf_cic2018_v3,SQL_Injection,Bot,0.0
+nf_cic2018_v3,SQL_Injection,Brute_Force_-Web,0.06393249650306716
+nf_cic2018_v3,SQL_Injection,Brute_Force_-XSS,0.3399992933184002
+nf_cic2018_v3,SQL_Injection,DDOS_attack-HOIC,0.0
+nf_cic2018_v3,SQL_Injection,DDOS_attack-LOIC-UDP,0.0
+nf_cic2018_v3,SQL_Injection,DDoS_attacks-LOIC-HTTP,0.0
+nf_cic2018_v3,SQL_Injection,DoS_attacks-GoldenEye,0.0
+nf_cic2018_v3,SQL_Injection,DoS_attacks-Hulk,0.0
+nf_cic2018_v3,SQL_Injection,DoS_attacks-Slowloris,0.0
+nf_cic2018_v3,SQL_Injection,Infilteration,0.00013832898531797823
+nf_cic2018_v3,SQL_Injection,SSH-Bruteforce,0.0
+nf_cic2018_v3,SSH-Bruteforce,Benign,0.0
+nf_cic2018_v3,SSH-Bruteforce,Bot,0.0
+nf_cic2018_v3,SSH-Bruteforce,Brute_Force_-Web,0.0
+nf_cic2018_v3,SSH-Bruteforce,Brute_Force_-XSS,0.0
+nf_cic2018_v3,SSH-Bruteforce,DDOS_attack-HOIC,0.0
+nf_cic2018_v3,SSH-Bruteforce,DDOS_attack-LOIC-UDP,0.0
+nf_cic2018_v3,SSH-Bruteforce,DDoS_attacks-LOIC-HTTP,0.0
+nf_cic2018_v3,SSH-Bruteforce,DoS_attacks-GoldenEye,0.0
+nf_cic2018_v3,SSH-Bruteforce,DoS_attacks-Hulk,0.0
+nf_cic2018_v3,SSH-Bruteforce,DoS_attacks-Slowloris,0.0
+nf_cic2018_v3,SSH-Bruteforce,Infilteration,0.0
+nf_cic2018_v3,SSH-Bruteforce,SQL_Injection,0.0
+cic2017_fixed,Benign,Bot,0.01589566187174494
+cic2017_fixed,Benign,DDoS,0.0004154653605191987
+cic2017_fixed,Benign,DoS GoldenEye,0.009637756828861069
+cic2017_fixed,Benign,DoS Hulk,0.0014204110607556792
+cic2017_fixed,Benign,DoS Slowhttptest,0.005121166815591504
+cic2017_fixed,Benign,DoS slowloris,0.005569585391127761
+cic2017_fixed,Benign,FTP-Patator,0.0009306437508127567
+cic2017_fixed,Benign,PortScan,0.005463689186492405
+cic2017_fixed,Benign,SSH-Patator,0.0022780267840507135
+cic2017_fixed,Benign,Web Attack - Brute Force,0.02529660477626798
+cic2017_fixed,Bot,Benign,0.0005008802150053439
+cic2017_fixed,Bot,DDoS,0.0
+cic2017_fixed,Bot,DoS GoldenEye,0.0
+cic2017_fixed,Bot,DoS Hulk,0.0
+cic2017_fixed,Bot,DoS Slowhttptest,0.0
+cic2017_fixed,Bot,DoS slowloris,0.0
+cic2017_fixed,Bot,FTP-Patator,0.0
+cic2017_fixed,Bot,PortScan,0.0
+cic2017_fixed,Bot,SSH-Patator,0.0
+cic2017_fixed,Bot,Web Attack - Brute Force,0.0
+cic2017_fixed,DDoS,Benign,0.0
+cic2017_fixed,DDoS,Bot,0.0
+cic2017_fixed,DDoS,DoS GoldenEye,0.0
+cic2017_fixed,DDoS,DoS Hulk,0.00013333333333332366
+cic2017_fixed,DDoS,DoS Slowhttptest,0.0
+cic2017_fixed,DDoS,DoS slowloris,0.0
+cic2017_fixed,DDoS,FTP-Patator,0.0
+cic2017_fixed,DDoS,PortScan,0.00026666666666664743
+cic2017_fixed,DDoS,SSH-Patator,0.0
+cic2017_fixed,DDoS,Web Attack - Brute Force,0.0
+cic2017_fixed,DoS GoldenEye,Benign,0.0007111136147895605
+cic2017_fixed,DoS GoldenEye,Bot,0.0
+cic2017_fixed,DoS GoldenEye,DDoS,0.0
+cic2017_fixed,DoS GoldenEye,DoS Hulk,0.002049550423850782
+cic2017_fixed,DoS GoldenEye,DoS Slowhttptest,0.0015854736841984481
+cic2017_fixed,DoS GoldenEye,DoS slowloris,0.0003144832588159421
+cic2017_fixed,DoS GoldenEye,FTP-Patator,0.0
+cic2017_fixed,DoS GoldenEye,PortScan,0.0002808854905994304
+cic2017_fixed,DoS GoldenEye,SSH-Patator,0.0
+cic2017_fixed,DoS GoldenEye,Web Attack - Brute Force,0.007982269553916328
+cic2017_fixed,DoS Hulk,Benign,1.6604514178488045e-05
+cic2017_fixed,DoS Hulk,Bot,0.0
+cic2017_fixed,DoS Hulk,DDoS,0.00018333333333332008
+cic2017_fixed,DoS Hulk,DoS GoldenEye,0.00034912986516549095
+cic2017_fixed,DoS Hulk,DoS Slowhttptest,0.0004139188577571325
+cic2017_fixed,DoS Hulk,DoS slowloris,1.6604514178488045e-05
+cic2017_fixed,DoS Hulk,FTP-Patator,0.0
+cic2017_fixed,DoS Hulk,PortScan,4.981354253546413e-05
+cic2017_fixed,DoS Hulk,SSH-Patator,0.0
+cic2017_fixed,DoS Hulk,Web Attack - Brute Force,0.0010948031326475634
+cic2017_fixed,DoS Slowhttptest,Benign,0.0009365435579446385
+cic2017_fixed,DoS Slowhttptest,Bot,0.0
+cic2017_fixed,DoS Slowhttptest,DDoS,0.0
+cic2017_fixed,DoS Slowhttptest,DoS GoldenEye,0.002960241497887015
+cic2017_fixed,DoS Slowhttptest,DoS Hulk,0.0007693667934852056
+cic2017_fixed,DoS Slowhttptest,DoS slowloris,0.0022410321226395843
+cic2017_fixed,DoS Slowhttptest,FTP-Patator,0.0
+cic2017_fixed,DoS Slowhttptest,PortScan,0.00015052383233329396
+cic2017_fixed,DoS Slowhttptest,SSH-Patator,0.0
+cic2017_fixed,DoS Slowhttptest,Web Attack - Brute Force,0.003308097681170325
+cic2017_fixed,DoS slowloris,Benign,3.330811993436141e-05
+cic2017_fixed,DoS slowloris,Bot,0.0
+cic2017_fixed,DoS slowloris,DDoS,0.0
+cic2017_fixed,DoS slowloris,DoS GoldenEye,0.00048292614070286874
+cic2017_fixed,DoS slowloris,DoS Hulk,0.0009658507544757384
+cic2017_fixed,DoS slowloris,DoS Slowhttptest,0.0017562426851219972
+cic2017_fixed,DoS slowloris,FTP-Patator,0.0
+cic2017_fixed,DoS slowloris,PortScan,0.0
+cic2017_fixed,DoS slowloris,SSH-Patator,0.0
+cic2017_fixed,DoS slowloris,Web Attack - Brute Force,0.0
+cic2017_fixed,FTP-Patator,Benign,0.00014999999999998914
+cic2017_fixed,FTP-Patator,Bot,0.0
+cic2017_fixed,FTP-Patator,DDoS,0.0
+cic2017_fixed,FTP-Patator,DoS GoldenEye,0.0
+cic2017_fixed,FTP-Patator,DoS Hulk,0.0
+cic2017_fixed,FTP-Patator,DoS Slowhttptest,0.0
+cic2017_fixed,FTP-Patator,DoS slowloris,0.0
+cic2017_fixed,FTP-Patator,PortScan,0.0
+cic2017_fixed,FTP-Patator,SSH-Patator,0.0
+cic2017_fixed,FTP-Patator,Web Attack - Brute Force,0.0
+cic2017_fixed,PortScan,Benign,0.0018283917056839021
+cic2017_fixed,PortScan,Bot,0.0
+cic2017_fixed,PortScan,DDoS,0.0029646637339103663
+cic2017_fixed,PortScan,DoS GoldenEye,0.0004611643572375852
+cic2017_fixed,PortScan,DoS Hulk,0.001465915200321771
+cic2017_fixed,PortScan,DoS Slowhttptest,0.0002840489825477001
+cic2017_fixed,PortScan,DoS slowloris,9.891588455031784e-05
+cic2017_fixed,PortScan,FTP-Patator,0.0
+cic2017_fixed,PortScan,SSH-Patator,0.0
+cic2017_fixed,PortScan,Web Attack - Brute Force,0.012301454282998439
+cic2017_fixed,SSH-Patator,Benign,0.00013334756303970172
+cic2017_fixed,SSH-Patator,Bot,0.0
+cic2017_fixed,SSH-Patator,DDoS,0.0
+cic2017_fixed,SSH-Patator,DoS GoldenEye,0.0
+cic2017_fixed,SSH-Patator,DoS Hulk,0.0
+cic2017_fixed,SSH-Patator,DoS Slowhttptest,0.0
+cic2017_fixed,SSH-Patator,DoS slowloris,0.0007667484874782853
+cic2017_fixed,SSH-Patator,FTP-Patator,0.0
+cic2017_fixed,SSH-Patator,PortScan,0.0
+cic2017_fixed,SSH-Patator,Web Attack - Brute Force,0.0
+cic2017_fixed,Web Attack - Brute Force,Benign,0.0008503301424239584
+cic2017_fixed,Web Attack - Brute Force,Bot,0.0
+cic2017_fixed,Web Attack - Brute Force,DDoS,0.0
+cic2017_fixed,Web Attack - Brute Force,DoS GoldenEye,0.0009744900638164227
+cic2017_fixed,Web Attack - Brute Force,DoS Hulk,0.00028344996278284804
+cic2017_fixed,Web Attack - Brute Force,DoS Slowhttptest,0.00040766509117819556
+cic2017_fixed,Web Attack - Brute Force,DoS slowloris,0.0
+cic2017_fixed,Web Attack - Brute Force,FTP-Patator,0.0
+cic2017_fixed,Web Attack - Brute Force,PortScan,0.0006909413714106445
+cic2017_fixed,Web Attack - Brute Force,SSH-Patator,0.0

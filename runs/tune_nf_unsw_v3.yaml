@@ -1,0 +1,14 @@
+# best val macro-F1 0.5310; no augmentation 0.5274
+validaug:
+  budget_trials: 30
+  delta: 2.8698
+  gamma: 1.0
+  inner_steps: 3
+  lambda_b: 0.1057
+  lambda_c: 0.1984
+  max_grad_norm: 1.0
+  oversample: 1.5
+  pool_cap: 10000
+  sample_batch: 8192
+  t1: 0.3655
+  t2: 0.8404

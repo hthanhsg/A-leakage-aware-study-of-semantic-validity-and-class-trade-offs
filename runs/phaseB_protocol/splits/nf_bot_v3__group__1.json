@@ -1,0 +1,26 @@
+{
+  "group_fallback_classes": [],
+  "train_conflicts_policy": "majority",
+  "train_conflict_removed": {
+    "Reconnaissance": 7517,
+    "Benign": 2644,
+    "DDoS": 1227,
+    "DoS": 87,
+    "Theft": 1
+  },
+  "sizes_before_dedup": [
+    320596,
+    161430,
+    160102
+  ],
+  "dedup_removed": {
+    "train_internal": 197512,
+    "val_overlap_train": 53193,
+    "test_overlap_trainval": 61188
+  },
+  "sizes": [
+    123084,
+    108237,
+    98914
+  ]
+}
